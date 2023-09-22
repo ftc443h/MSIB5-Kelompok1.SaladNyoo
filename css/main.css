@@ -94,13 +94,8 @@ input::placeholder{
 
 .container-Bakcr{
     position: absolute;
-<<<<<<< HEAD
-    width: 500px;
-    margin-left: -680px;
-=======
     width: 480px;
     margin-left: -620px;
->>>>>>> e862172134a462d23002871a4ec5285a3146483d
     height: auto;
     cursor: no-drop;
     margin-top: 10px;
@@ -192,7 +187,6 @@ input::placeholder{
     margin-left: 720px;
     margin-top: -330px;
     cursor: no-drop;
-    width: 500px;
 }
 
 .container-Aboua{
