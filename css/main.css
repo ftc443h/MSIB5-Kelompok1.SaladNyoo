@@ -83,7 +83,7 @@ input::placeholder{
 
 .container-Bakcr{
     position: absolute;
-    width: 600px;
+    width: 500px;
     margin-left: -680px;
     height: auto;
     cursor: no-drop;
@@ -170,6 +170,7 @@ input::placeholder{
     margin-left: 720px;
     margin-top: -330px;
     cursor: no-drop;
+    width: 500px;
 }
 
 .container-Aboua{
