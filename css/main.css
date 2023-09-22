@@ -61,6 +61,17 @@
     margin-top: -5px;
 }
 
+#container-A:hover{
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    transition: 5s;
+    background-color: #059652;
+    border-radius: 10px;
+}
+
 input::placeholder{
     font-size: 14px;
     color: darkslategray;
@@ -83,11 +94,16 @@ input::placeholder{
 
 .container-Bakcr{
     position: absolute;
+<<<<<<< HEAD
     width: 500px;
     margin-left: -680px;
+=======
+    width: 480px;
+    margin-left: -620px;
+>>>>>>> e862172134a462d23002871a4ec5285a3146483d
     height: auto;
     cursor: no-drop;
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .container-Pragraf{
@@ -130,6 +146,12 @@ input::placeholder{
 #container-ContTiem{
     margin-top: 200px;
     background-color: #F3FDE8;
+    max-width: 100%;
+    height: 1200px;
+}
+
+#container-ContContct{
+    margin-top: 10px;
     max-width: 100%;
     height: auto;
 }
@@ -240,6 +262,12 @@ svg{
     position: absolute;
     margin-top: 412px;
     margin-left: 420px;
+}
+
+#orld-older{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -230px;
 }
 
 .menu .nav-tabs {
@@ -482,4 +510,167 @@ svg{
   .teams .team-member:hover .social {
     right: 8px;
     opacity: 1;
+  }
+
+  .Contact{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: darkslategray;
+    font-family: 'roboto';
+    
+}
+
+.info-item {
+    background: #F3FDE8;
+    padding: 30px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .info-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    color: white;
+    background: palevioletred;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+.php-email-form {
+    width: 100%;
+    margin-top: 30px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  }
+  
+.php-email-form .form-group {
+    padding-bottom: 20px;
+  }
+  
+.php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #df1529;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+.php-email-form .error-message br+br {
+    margin-top: 25px;
+  }
+  
+.php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+.php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+.php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #059652;
+    border-top-color: #fff;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+.php-email-form input,
+.php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+.php-email-form input:focus,
+.php-email-form textarea:focus {
+    border-color: var(--color-primary);
+  }
+  
+.php-email-form input {
+    height: 48px;
+  }
+  
+.php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+.php-email-form button[type=submit] {
+    background: palevioletred;
+    border: 0;
+    padding: 12px 40px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    margin-left: 1160px;
+  }
+  
+.php-email-form button[type=submit]:hover {
+    background: #ec2727;
+  }
+
+
+  .footer {
+    font-size: 14px;
+    background-color: #183D3D;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .footer .icon {
+    margin-top: 4px;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 0;
+  }
+
+  .footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+
+  .footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer .credits {
+    padding-top: 4px;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .footer .credits a {
+    color: #fff;
   }
