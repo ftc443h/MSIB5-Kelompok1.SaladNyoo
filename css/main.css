@@ -599,7 +599,6 @@ body {
     color: #fff;
     transition: 0.4s;
     border-radius: 50px;
-    margin-left: 1160px;
   }
 
 .php-email-form button[type=submit]:hover {
@@ -666,16 +665,6 @@ body {
         margin-left: -20px;
     }
 
-    .php-email-form button[type=submit] {
-        background: palevioletred;
-        border: 0;
-        padding: 12px 40px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 50px;
-        margin-left: 1020px;
-    }
-
     .img-about {
         margin-left: -100px;
     }
@@ -694,40 +683,15 @@ body {
 }
 
 @media(max-width: 1212px) {
-    .php-email-form button[type=submit] {
-        background: palevioletred;
-        border: 0;
-        padding: 12px 40px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 50px;
-        margin-left: 1020px;
-    }
+    
 }
 
 @media(max-width: 1095px) {
-    .php-email-form button[type=submit] {
-        background: palevioletred;
-        border: 0;
-        padding: 12px 40px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 50px;
-        margin-left: 880px;
-    }
+    
 }
 
 /* Media Button Contact Images Dari 100px */
 @media(max-width: 1000px) {
-    .php-email-form button[type=submit] {
-        background: palevioletred;
-        border: 0;
-        padding: 12px 40px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 50px;
-        margin-left: 820px;
-    }
 
     .img-about {
         margin-left: -100px;
@@ -736,15 +700,6 @@ body {
 
 /* Media Button Contact Images Dari 998px */
 @media(max-width: 998px) {
-    .php-email-form button[type=submit] {
-        background: palevioletred;
-        border: 0;
-        padding: 12px 40px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 50px;
-        margin-left: 800px;
-    }
 
     .img-about {
         margin-left: -100px;
@@ -754,15 +709,6 @@ body {
 
 /* Media Button Contact Images Dari 995px */
 @media(max-width: 995px) {
-    .php-email-form button[type=submit] {
-        background: palevioletred;
-        border: 0;
-        padding: 12px 40px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 50px;
-        margin-left: 800px;
-    }
 
     .img-about {
         margin-left: -100px;
@@ -802,16 +748,6 @@ body {
 
     #container-MEN {
         margin-top: 400px;
-    }
-
-    .php-email-form button[type=submit] {
-        background: palevioletred;
-        border: 0;
-        padding: 12px 40px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 50px;
-        margin-left: 800px;
     }
 }
 
