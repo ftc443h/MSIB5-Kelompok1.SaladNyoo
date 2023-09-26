@@ -28,6 +28,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,14 +41,14 @@
             <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
                 <div class="container-fluid">
                     <img class="container-fludIMG" src="images/Logo.png" alt="">
-                    <a class="navbar-brand" href="#">salad nyoo official</a>
+                    <a class="navbar-brand" href="index.html">salad nyoo official</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarColor03">
-                        <ul class="navbar-nav me-auto">
+                        <ul class="navbar-nav me-auto" id="daftarSaladNyoo1">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">
                                     <span class="visually-hidden">(current)</span>
@@ -68,7 +71,7 @@
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <input class="form-control me-sm-2" type="search" placeholder="Search">
+                            <input class="form-control me-sm-2" type="search" placeholder="Search" id="search" name="" onkeyup="prosesSearch();">
                             <button class="btn btn-secondary my-2 my-sm-0 container-BTSearch"
                                 type="submit">Search</button>
                         </form>
@@ -76,29 +79,35 @@
                 </div>
             </nav><!-- Navigation End -->
 
+            <!-- Content Home Start -->
             <section id="hero" class="d-flex align-items-center">
-
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
                             data-aos="fade-up" data-aos-delay="200">
-                            <h1>Salad Nyoo</h1>
-                            <h2>Tersedia di Seluruh Negeri, Salad Nyoo Memberikan Kepopuleran Salad Buah yang Sehat dan
-                                Lezat kepada Semua Warga Indonesia!</h2>
+                            <h1 class="pragraff">salad-nyoo</h1>
+                            <h2 class="pragraff">Selamat Datang di Salad Nyoo!
+                                cita rasa segar dan sehat! Di Salad Buah Nyoo, kami menghadirkan
+                                berbagai pilihan salad buah yang lezat dan bergizi untuk memenuhi
+                                nutrisi kebutuhan harian Anda. Salad ini dibuat dengan bahan-bahan
+                                segar pilihan, setiap hidangan kami adalah perpaduan antara rasa
+                                dan kesehatan.</h2>
+                                <a onclick="shooping();"><svg id="svgiconshoopping" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                  </svg></a>
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                                <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+                                <a href="product.html" class="btn-get-started scrollto">Get Started</a>
+                                <a href="https://www.youtube.com/embed/XGqtUtAIr70?si=pF5_JSmqjOJTl2-U"
                                     class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch
                                         Video</span></a>
                             </div>
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                            <img src="assets/img/salad.png" class="img-fluid animated" alt="">
+                            <img src="images/gambar_3.png" class="container-imges animated" alt="">
                         </div>
                     </div>
                 </div>
-
-            </section>
+            </section> <!-- Content Home End -->
 
             <!-- Content About -->
             <section id="why-us" class="why-us section-bg" style="padding-top: 30px;">
@@ -116,7 +125,7 @@
 
                                 <div class="content">
                                     <h4> Salad Nyoo <strong>Pelopor Salad Buah #1 di Indonesia</strong></h4>
-                                    <p>
+                                    <p class="oLD">
                                         Kelezatan dalam Setiap Gigitan, Salad Nyoo: Buah Segar untuk Kehidupan Sehat
                                         yang Lezat.
                                     </p>
@@ -174,544 +183,514 @@
 
                                     </ul>
                                 </div>
-
                             </div>
-
                             <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
                                 style='background-image: url("./images/salad-about.png");' data-aos="zoom-in"
                                 data-aos-delay="150">&nbsp;</div>
-
                         </div>
-
                     </div>
                 </div>
-            </section>
-            <br>
+            </section><!-- Content About End -->
 
-        </div>
+            <!--Content Menu Salad Nyoo Start -->
+            <section style="padding-top: 200px;" id="MenProduct">
+                <div class="container-container menu">
+                    <div class="container-bleker" id="containerABout">
+                        <div class="container">
+                            <div class="row" id="container-MEN">
+                                <div class="col-lg-12 col col-xl-12 text-center container-Text" data-aos="fade-up">
 
+                                    <div class="section-header">
+                                        <h2 class="container-MNSOU" id="menu">Our Menu</h2>
+                                        <p class="dooon">Check Our Salad Nyoo Menu</p>
+                                    </div>
 
-        <div class="container-container menu">
-            <div class="container-bleker" id="containerABout">
+                                    <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up"
+                                        data-aos-delay="200">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link active show" data-bs-toggle="tab"
+                                                data-bs-target="#menu-starters">
+                                                <h4>Yummy</h4>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+                                                <h4>Dreamy</h4>
+                                            </a>
+
+                                    </ul>
+
+                                    <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+                                        <div class="tab-pane fade active show" id="menu-starters">
+
+                                            <div class="tab-header text-center">
+                                                <p>Menu</p>
+                                                <h3>Yummy</h3>
+                                            </div>
+
+                                            <div class="row gy-5">
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 menu-item">
+                                                    <a href="buy-product.html" class="glightbox"><img
+                                                            src="images/salad1.png" class="menu-img img-fluid"
+                                                            alt=""></a>
+                                                    <h3 class="Mnr">Super Big</h3>
+                                                    <p class="ingredients">
+                                                        25 pilihan buah, 6 pilihan saus
+                                                    </p>
+                                                    <p class="price">
+                                                        Rp 54.000
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 menu-item">
+                                                    <a href="buy-product.html" class="glightbox"><img
+                                                            src="images/salad2.png" class="menu-img img-fluid"
+                                                            alt=""></a>
+                                                    <h3 class="Mnr">Big</h3>
+                                                    <p class="ingredients">
+                                                        25 pilihan buah, 6 pilihan saus
+                                                    </p>
+                                                    <p class="price">
+                                                        Rp 39.000
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 menu-item">
+                                                    <a href="buy-product.html" class="glightbox"><img
+                                                            src="images/salad3.png" class="menu-img img-fluid"
+                                                            alt=""></a>
+                                                    <h3 class="Mnr">Baby</h3>
+                                                    <p class="ingredients">
+                                                        25 pilihan buah, 6 pilihan saus
+                                                    </p>
+                                                    <p class="price">
+                                                        Rp 24.000
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 menu-item">
+                                                    <a href="buy-product.html" class="glightbox"><img
+                                                            src="images/salad4.png" class="menu-img img-fluid"
+                                                            alt=""></a>
+                                                    <h3 class="Mnr">mini</h3>
+                                                    <p class="ingredients">
+                                                        25 pilihan buah, 6 pilihan saus
+                                                    </p>
+                                                    <p class="price">
+                                                        Rp 19.000
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="menu-breakfast">
+
+                                            <div class="tab-header text-center">
+                                                <p class="Mnr">Menu</p>
+                                                <h3>Dreamy</h3>
+                                            </div>
+
+                                            <div class="row gy-5">
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 menu-item">
+                                                    <a href="buy-product.html" class="glightbox"><img
+                                                            src="images/salad1.png" class="menu-img img-fluid col-md-6"
+                                                            alt=""></a>
+                                                    <h3 class="Mnr">Super Big</h3>
+                                                    <p class="ingredients">
+                                                        21 pilihan buah, 6 pilihan saus
+                                                    </p>
+                                                    <p class="price">
+                                                        Rp 49.000
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 menu-item">
+                                                    <a href="buy-product.html" class="glightbox"><img
+                                                            src="images/salad2.png" class="menu-img img-fluid"
+                                                            alt=""></a>
+                                                    <h3 class="Mnr">Big</h3>
+                                                    <p class="ingredients">
+                                                        21 pilihan buah, 6 pilihan saus
+                                                    </p>
+                                                    <p class="price">
+                                                        Rp 35.000
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 menu-item">
+                                                    <a href="buy-product.html" class="glightbox"><img
+                                                            src="images/salad3.png" class="menu-img img-fluid"
+                                                            alt=""></a>
+                                                    <h3 class="Mnr">Baby</h3>
+                                                    <p class="ingredients">
+                                                        21 pilihan buah, 6 pilihan saus
+                                                    </p>
+                                                    <p class="price">
+                                                        Rp 22.000
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 menu-item">
+                                                    <a href="buy-product.html" class="glightbox"><img
+                                                            src="images/salad4.png" class="menu-img img-fluid"
+                                                            alt=""></a>
+                                                    <h3 class="Mnr">Mini</h3>
+                                                    <p class="ingredients">
+                                                        21 pilihan buah, 6 pilihan saus
+                                                    </p>
+                                                    <p class="price">
+                                                        Rp 17.000
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- Content Menu Salad Nyoo End -->
+
+            <!-- Content Team Salad Nyoo Start -->
+            <section class="container" id="TeamSaladNyoo">
+                <div class="container-container teams section-bg">
+                    <div class="container-bleker" id="containerTeam">
+                        <div class="container">
+                            <div class="row backroundTEM">
+                                <div class="col-lg-12 col col-xl-12 text-center container-Text">
+                                    <div class="section-header">
+                                        <h2 class="containerTem" id="team">Teams</h2>
+                                        <p class="containerPTeams">Our Teams Salad Nyoo</p>
+                                    </div>
+
+                                    <div class="row gy-4">
+
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xl-4 d-flex align-items-stretch" data-aos="fade-up"
+                                            data-aos-delay="100">
+                                            <div class="team-member">
+                                                <div class="member-img">
+                                                    <img src="images/fatchan.png" class="img-fluid" alt="">
+                                                    <div class="social">
+
+                                                        <a href="#" class="instagram align-self-center"><i
+                                                                class="bi bi-instagram"></i></a>
+                                                        <a href="#" class="facebook align-self-center"><i
+                                                                class="bi bi-facebook"></i></a>
+                                                        <a href="#" class="twitter align-self-center"><i
+                                                                class="bi bi-twitter"></i></a>
+                                                        <a href="#" class="linkedin align-self-center"><i
+                                                                class="bi bi-linkedin"></i></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="member-info">
+                                                    <h4>Fatchan Muhammad Hakim</h4>
+                                                    <span>Leader</span>
+                                                    <p>"Memasak itu seperti melukis atau menulis lagu. Sama seperti
+                                                        hanya
+                                                        ada
+                                                        begitu
+                                                        banyak nada atau
+                                                        warna, ada begitu banyak rasa - cara Anda menggabungkannya yang
+                                                        membuat
+                                                        Anda
+                                                        berbeda." - Wolfgang
+                                                        Puck.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xl-4 d-flex align-items-stretch" data-aos="fade-up"
+                                            data-aos-delay="200">
+                                            <div class="team-member">
+                                                <div class="member-img">
+                                                    <img src="images/Bagas.png" class="img-fluid" alt="">
+                                                    <div class="social">
+
+                                                        <a href="#" class="instagram align-self-center"><i
+                                                                class="bi bi-instagram"></i></a>
+                                                        <a href="#" class="facebook align-self-center"><i
+                                                                class="bi bi-facebook"></i></a>
+                                                        <a href="#" class="twitter align-self-center"><i
+                                                                class="bi bi-twitter"></i></a>
+                                                        <a href="#" class="linkedin align-self-center"><i
+                                                                class="bi bi-linkedin"></i></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="member-info">
+                                                    <h4>Bagas Adi Kurniawan</h4>
+                                                    <span>Anggota</span>
+                                                    <p>"Memasak tidak sulit. Setiap orang memiliki selera, meski mereka
+                                                        tidak
+                                                        menyadarinya. Meski, kamu
+                                                        bukan koki yang hebat, tidak ada yang bisa menghentikanmu untuk
+                                                        memahami
+                                                        perbedaan antara mana yang
+                                                        rasanya enak dan mana yang tidak." - Gerard Depardie.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xl-4 d-flex align-items-stretch" data-aos="fade-up"
+                                            data-aos-delay="300">
+                                            <div class="team-member">
+                                                <div class="member-img">
+                                                    <img src="images/YK.png" class="img-fluid" alt="">
+                                                    <div class="social">
+
+                                                        <a href="#" class="instagram align-self-center"><i
+                                                                class="bi bi-instagram"></i></a>
+                                                        <a href="#" class="facebook align-self-center"><i
+                                                                class="bi bi-facebook"></i></a>
+                                                        <a href="#" class="twitter align-self-center"><i
+                                                                class="bi bi-twitter"></i></a>
+                                                        <a href="#" class="linkedin align-self-center"><i
+                                                                class="bi bi-linkedin"></i></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="member-info">
+                                                    <h4>Satriya Yoga Madhasatya</h4>
+                                                    <span>Anggota</span>
+                                                    <p>"Memasak sekaligus merupakan salah satu seni yang paling
+                                                        sederhana
+                                                        dan
+                                                        paling
+                                                        memuaskan. Tetapi,
+                                                        untuk memasak dengan baik, orang harus mencintai dan menghormati
+                                                        makanan." -
+                                                        Craig Claiborne.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xl-4 d-flex align-items-stretch" data-aos="fade-up"
+                                            data-aos-delay="400">
+                                            <div class="team-member">
+                                                <div class="member-img">
+                                                    <img src="images/Team.png" class="img-fluid" alt="">
+                                                    <div class="social">
+
+                                                        <a href="#" class="instagram align-self-center"><i
+                                                                class="bi bi-instagram"></i></a>
+                                                        <a href="#" class="facebook align-self-center"><i
+                                                                class="bi bi-facebook"></i></a>
+                                                        <a href="#" class="twitter align-self-center"><i
+                                                                class="bi bi-twitter"></i></a>
+                                                        <a href="#" class="linkedin align-self-center"><i
+                                                                class="bi bi-linkedin"></i></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="member-info">
+                                                    <h4>Rani Kurniawati</h4>
+                                                    <span>Anggota</span>
+                                                    <p>"Kamu harus menjadi diri sendiri saat membuat dan memasak. Kamu
+                                                        melakukan
+                                                        apa
+                                                        yang perlu kamu
+                                                        lakukan dan melakukannya dengan kemampuan terbaikmu." - Leah
+                                                        Chase.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xl-4 d-flex align-items-stretch" data-aos="fade-up"
+                                            data-aos-delay="500">
+                                            <div class="team-member">
+                                                <div class="member-img">
+                                                    <img src="images/Dela.png" class="img-fluid" alt="">
+                                                    <div class="social">
+
+                                                        <a href="#" class="instagram align-self-center"><i
+                                                                class="bi bi-instagram"></i></a>
+                                                        <a href="#" class="facebook align-self-center"><i
+                                                                class="bi bi-facebook"></i></a>
+                                                        <a href="#" class="twitter align-self-center"><i
+                                                                class="bi bi-twitter"></i></a>
+                                                        <a href="#" class="linkedin align-self-center"><i
+                                                                class="bi bi-linkedin"></i></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="member-info">
+                                                    <h4>Dela Septriani</h4>
+                                                    <span>Anggota</span>
+                                                    <p>"Memasak bagi sebagian orang adalah kegembiraan, bagi yang lain
+                                                        cara
+                                                        untuk
+                                                        bersantai setelah hari
+                                                        yang sibuk di tempat kerja, dan untuk beberapa, ini murni sarana
+                                                        untuk
+                                                        mencapai tujuan. Apa pun
+                                                        perasaanmu tentang memasak, sangat bermanfaat melihat teman dan
+                                                        keluarga
+                                                        menikmati makananmu. -
+                                                        Chetna.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- Content Team Salad Nyoo End -->
+
+            <!-- Content Contact Salad Nyoo Start -->
+            <section class="contact" id="kontak">
+                <div class="container-fluid" data-aos="fade-up">
+                    <div class="Contact text-center" id="container-ContContct">
+                        <h3 id="contact">CONTACT</h3>
+                        <h6 class="LKM">Perlu bantuan?, Hubungi kami</h6>
+                    </div>
+                    <div class="mb-3">
+                        <iframe style="border:1px ; width: 100%; height: 350px;"
+                            src="https://www.google.com/maps/embed?pb=vDvYMpf68YZjjhh5A" frameborder="1"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="row gy-4">
+                        <div class="col-md-6">
+                            <div class="info-item  d-flex align-items-center">
+                                <i class="icon bi bi-map flex-shrink-0"></i>
+                                <div>
+                                    <h3>Alamat Kami</h3>
+                                    <p>Laweyan, Surakarta</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item d-flex align-items-center">
+                                <i class="icon bi bi-envelope flex-shrink-0"></i>
+                                <div>
+                                    <h3>Email Kami</h3>
+                                    <p>contoh@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item  d-flex align-items-center">
+                                <i class="icon bi bi-telephone flex-shrink-0"></i>
+                                <div>
+                                    <h3>Hubungi Kami</h3>
+                                    <p>+62 8123456789</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item  d-flex align-items-center">
+                                <i class="icon bi bi-share flex-shrink-0"></i>
+                                <div>
+                                    <h3>Buka Jam</h3>
+                                    <div><strong>Senin-Sabtu:</strong> 11.00 - 23.00;
+                                        <strong>Minggu:</strong> Tutup
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+                        <div class="row">
+                            <div class="col-xl-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda"
+                                    required>
+                            </div>
+                            <div class="col-xl-6 form-group">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Email Anda" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Pesan"
+                                required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Pesan Anda sudah terkirim, Terima Kasih!</div>
+                        </div>
+                        <div class="text-center" id="btnnn"><button class="buttonKrim" type="submit">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </section><!-- Content Contact Salad Nyoo End -->
+
+            <!-- Content Footer Salad Nyoo Start -->
+            <footer id="footer" class="footer">
                 <div class="container">
-                    <div class="row" id="container-MEN">
-                        <div class="col-lg-12 col col-xl-12 text-center container-Text" data-aos="fade-up">
-
-                            <div class="section-header">
-                                <h2 class="container-MNSOU" id="menu">Our Menu</h2>
-                                <p class="dooon">Check Our Salad Nyoo Menu</p>
-                            </div>
-
-                            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up"
-                                data-aos-delay="200">
-
-                                <li class="nav-item">
-                                    <a class="nav-link active show" data-bs-toggle="tab"
-                                        data-bs-target="#menu-starters">
-                                        <h4>Yummy</h4>
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-                                        <h4>Dreamy</h4>
-                                    </a>
-
-                            </ul>
-
-                            <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-
-                                <div class="tab-pane fade active show" id="menu-starters">
-
-                                    <div class="tab-header text-center">
-                                        <p>Menu</p>
-                                        <h3>Yummy</h3>
-                                    </div>
-
-                                    <div class="row gy-5">
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad1.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Magnam Tiste</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $5.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad2.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Aut Luia</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $14.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad3.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Est Eligendi</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $8.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad4.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Eos Luibusdam</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $12.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad5.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Eos Luibusdam</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $12.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad6.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Laboriosam Direva</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $9.95
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="menu-breakfast">
-
-                                    <div class="tab-header text-center">
-                                        <p class="Mnr">Menu</p>
-                                        <h3>Dreamy</h3>
-                                    </div>
-
-                                    <div class="row gy-5">
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad1.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Magnam Tiste</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $5.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad2.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Aut Luia</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $14.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad3.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Est Eligendi</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $8.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad4.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Eos Luibusdam</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $12.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad5.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Eos Luibusdam</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $12.95
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 menu-item">
-                                            <a href="buy-product.html" class="glightbox"><img src="images/salad6.png"
-                                                    class="menu-img img-fluid" alt=""></a>
-                                            <h4 class="Mnr">Laboriosam Direva</h4>
-                                            <p class="ingredients">
-                                                Lorem, deren, trataro, filede, nerada
-                                            </p>
-                                            <p class="price">
-                                                $9.95
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-container teams section-bg">
-            <div class="container-bleker" id="containerTeam">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col col-xl-12 text-center container-Text">
-                            <div class="section-header">
-                                <h2 class="containerTem" id="team">Teams</h2>
-                                <p class="containerPTeams">Our Teams Salad Nyoo</p>
-                            </div>
-
-                            <div class="row gy-4">
-
-                                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                                    data-aos-delay="100">
-                                    <div class="team-member">
-                                        <div class="member-img">
-                                            <img src="images/fatchan.png" class="img-fluid" alt="">
-                                            <div class="social">
-
-                                                <a href="#" class="instagram align-self-center"><i
-                                                        class="bi bi-instagram"></i></a>
-                                                <a href="#" class="facebook align-self-center"><i
-                                                        class="bi bi-facebook"></i></a>
-                                                <a href="#" class="twitter align-self-center"><i
-                                                        class="bi bi-twitter"></i></a>
-                                                <a href="#" class="linkedin align-self-center"><i
-                                                        class="bi bi-linkedin"></i></a>
-
-                                            </div>
-                                        </div>
-                                        <div class="member-info">
-                                            <h4>Fatchan Muhammad Hakim</h4>
-                                            <span>Leader</span>
-                                            <p>"Memasak itu seperti melukis atau menulis lagu. Sama seperti hanya ada
-                                                begitu
-                                                banyak nada atau
-                                                warna, ada begitu banyak rasa - cara Anda menggabungkannya yang membuat
-                                                Anda
-                                                berbeda." - Wolfgang
-                                                Puck.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                                    data-aos-delay="200">
-                                    <div class="team-member">
-                                        <div class="member-img">
-                                            <img src="images/Team.png" class="img-fluid" alt="">
-                                            <div class="social">
-
-                                                <a href="#" class="instagram align-self-center"><i
-                                                        class="bi bi-instagram"></i></a>
-                                                <a href="#" class="facebook align-self-center"><i
-                                                        class="bi bi-facebook"></i></a>
-                                                <a href="#" class="twitter align-self-center"><i
-                                                        class="bi bi-twitter"></i></a>
-                                                <a href="#" class="linkedin align-self-center"><i
-                                                        class="bi bi-linkedin"></i></a>
-
-                                            </div>
-                                        </div>
-                                        <div class="member-info">
-                                            <h4>Bagas Adi Kurniawan</h4>
-                                            <span>Anggota</span>
-                                            <p>"Memasak tidak sulit. Setiap orang memiliki selera, meski mereka tidak
-                                                menyadarinya. Meski, kamu
-                                                bukan koki yang hebat, tidak ada yang bisa menghentikanmu untuk memahami
-                                                perbedaan antara mana yang
-                                                rasanya enak dan mana yang tidak." - Gerard Depardie.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                                    data-aos-delay="300">
-                                    <div class="team-member">
-                                        <div class="member-img">
-                                            <img src="images/YK.png" class="img-fluid" alt="">
-                                            <div class="social">
-
-                                                <a href="#" class="instagram align-self-center"><i
-                                                        class="bi bi-instagram"></i></a>
-                                                <a href="#" class="facebook align-self-center"><i
-                                                        class="bi bi-facebook"></i></a>
-                                                <a href="#" class="twitter align-self-center"><i
-                                                        class="bi bi-twitter"></i></a>
-                                                <a href="#" class="linkedin align-self-center"><i
-                                                        class="bi bi-linkedin"></i></a>
-
-                                            </div>
-                                        </div>
-                                        <div class="member-info">
-                                            <h4>Satriya Yoga Madhasatya</h4>
-                                            <span>Anggota</span>
-                                            <p>"Memasak sekaligus merupakan salah satu seni yang paling sederhana dan
-                                                paling
-                                                memuaskan. Tetapi,
-                                                untuk memasak dengan baik, orang harus mencintai dan menghormati
-                                                makanan." -
-                                                Craig Claiborne.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                                    data-aos-delay="400">
-                                    <div class="team-member">
-                                        <div class="member-img">
-                                            <img src="images/Team.png" class="img-fluid" alt="">
-                                            <div class="social">
-
-                                                <a href="#" class="instagram align-self-center"><i
-                                                        class="bi bi-instagram"></i></a>
-                                                <a href="#" class="facebook align-self-center"><i
-                                                        class="bi bi-facebook"></i></a>
-                                                <a href="#" class="twitter align-self-center"><i
-                                                        class="bi bi-twitter"></i></a>
-                                                <a href="#" class="linkedin align-self-center"><i
-                                                        class="bi bi-linkedin"></i></a>
-
-                                            </div>
-                                        </div>
-                                        <div class="member-info">
-                                            <h4>Rani Kurniawati</h4>
-                                            <span>Anggota</span>
-                                            <p>"Kamu harus menjadi diri sendiri saat membuat dan memasak. Kamu melakukan
-                                                apa
-                                                yang perlu kamu
-                                                lakukan dan melakukannya dengan kemampuan terbaikmu." - Leah Chase.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                                    data-aos-delay="500">
-                                    <div class="team-member">
-                                        <div class="member-img">
-                                            <img src="images/Team.png" class="img-fluid" alt="">
-                                            <div class="social">
-
-                                                <a href="#" class="instagram align-self-center"><i
-                                                        class="bi bi-instagram"></i></a>
-                                                <a href="#" class="facebook align-self-center"><i
-                                                        class="bi bi-facebook"></i></a>
-                                                <a href="#" class="twitter align-self-center"><i
-                                                        class="bi bi-twitter"></i></a>
-                                                <a href="#" class="linkedin align-self-center"><i
-                                                        class="bi bi-linkedin"></i></a>
-
-                                            </div>
-                                        </div>
-                                        <div class="member-info">
-                                            <h4>Dela Septriani</h4>
-                                            <span>Anggota</span>
-                                            <p>"Memasak bagi sebagian orang adalah kegembiraan, bagi yang lain cara
-                                                untuk
-                                                bersantai setelah hari
-                                                yang sibuk di tempat kerja, dan untuk beberapa, ini murni sarana untuk
-                                                mencapai tujuan. Apa pun
-                                                perasaanmu tentang memasak, sangat bermanfaat melihat teman dan keluarga
-                                                menikmati makananmu. -
-                                                Chetna.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section class="contact">
-            <div class="container-fluid" data-aos="fade-up">
-                <div class="Contact text-center" id="container-ContContct">
-                    <h3 id="contact">CONTACT</h3>
-                    <h6>Perlu bantuan?, Hubungi kami</h6>
-                </div>
-                <div class="mb-3">
-                    <iframe style="border:1px ; width: 100%; height: 350px;"
-                        src="https://www.google.com/maps/embed?pb=vDvYMpf68YZjjhh5A" frameborder="1"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="row gy-4">
-                    <div class="col-md-6">
-                        <div class="info-item  d-flex align-items-center">
-                            <i class="icon bi bi-map flex-shrink-0"></i>
+                    <div class="row gy-3">
+                        <div class="col-lg-3 col-md-6 d-flex">
+                            <i class="bi bi-geo-alt icon"></i>
                             <div>
-                                <h3>Alamat Kami</h3>
-                                <p>Laweyan, Surakarta</p>
+                                <h4>Alamat</h4>
+                                <p>
+                                    Laweyan<br>
+                                    Surakarta<br>
+                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-item d-flex align-items-center">
-                            <i class="icon bi bi-envelope flex-shrink-0"></i>
+                        <div class="col-lg-3 col-md-6 footer-links d-flex">
+                            <i class="bi bi-telephone icon"></i>
                             <div>
-                                <h3>Email Kami</h3>
-                                <p>contoh@example.com</p>
+                                <h4>Reservasi</h4>
+                                <p>
+                                    <strong>Phone:</strong> +62 8123456789<br>
+                                    <strong>Email:</strong> contoh@example.com<br>
+                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-item  d-flex align-items-center">
-                            <i class="icon bi bi-telephone flex-shrink-0"></i>
+                        <div class="col-lg-3 col-md-6 footer-links d-flex">
+                            <i class="bi bi-clock icon"></i>
                             <div>
-                                <h3>Hubungi Kami</h3>
-                                <p>+62 8123456789</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-item  d-flex align-items-center">
-                            <i class="icon bi bi-share flex-shrink-0"></i>
-                            <div>
-                                <h3>Buka Jam</h3>
-                                <div><strong>Senin-Sabtu:</strong> 11.00 - 23.00;
+                                <h4>Jadwal Buka</h4>
+                                <p>
+                                    <strong>Senin-Sabtu:</strong> 11.00 - 23.00<br>
                                     <strong>Minggu:</strong> Tutup
-                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Ikuti Kami</h4>
+                            <div class="social-links">
+                                <a href="#" class="instagram align-self-center"><i class="bi bi-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
-                    <div class="row">
-                        <div class="col-xl-6 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda"
-                                required>
-                        </div>
-                        <div class="col-xl-6 form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email Anda"
-                                required>
-                        </div>
+                <div class="container">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Salad Nyoo</span></strong>. All Rights Reserved
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek"
-                            required>
+                    <div class="credits">
+                        Designed by Kelompok 1
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Pesan" required></textarea>
-                    </div>
-                    <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Pesan Anda sudah terkirim, Terima Kasih!</div>
-                    </div>
-                    <div class="text-center" id="btnnn"><button class="buttonKrim" type="submit">Kirim</button></div>
-                </form>
-            </div>
-        </section>
-
-        <footer id="footer" class="footer">
-            <div class="container">
-                <div class="row gy-3">
-                    <div class="col-lg-3 col-md-6 d-flex">
-                        <i class="bi bi-geo-alt icon"></i>
-                        <div>
-                            <h4>Alamat</h4>
-                            <p>
-                                Laweyan<br>
-                                Surakarta<br>
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links d-flex">
-                        <i class="bi bi-telephone icon"></i>
-                        <div>
-                            <h4>Reservasi</h4>
-                            <p>
-                                <strong>Phone:</strong> +62 8123456789<br>
-                                <strong>Email:</strong> contoh@example.com<br>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links d-flex">
-                        <i class="bi bi-clock icon"></i>
-                        <div>
-                            <h4>Jadwal Buka</h4>
-                            <p>
-                                <strong>Senin-Sabtu:</strong> 11.00 - 23.00<br>
-                                <strong>Minggu:</strong> Tutup
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Ikuti Kami</h4>
-                        <div class="social-links">
-                            <a href="#" class="instagram align-self-center"><i class="bi bi-instagram"></i></a>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
+            </footer><!-- Content Footer Salad Nyoo End -->
 
-            <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <strong><span>Salad Nyoo</span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                    Designed by Kelompok 1
-                </div>
-            </div>
-
-        </footer>
+            <div class="top" onClick="goToTop();"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-up-circle-fill arrow" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+              </svg></div>
 
 
-        <!-- Javascript, JQuery Bootstrap & External -->
-        <script
-            type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "186dd1df-2b90-4da9-a2a1-d6a13e404c0b"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
+            <!-- Javascript, JQuery Bootstrap & External -->
+            <script
+                type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "186dd1df-2b90-4da9-a2a1-d6a13e404c0b"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+            <script src="js/main.js"></script>
 </body>
-
 </html>
