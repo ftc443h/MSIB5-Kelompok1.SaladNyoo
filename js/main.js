@@ -2,9 +2,9 @@
 function shooping() {
     var shopp = "Apakah Anda Ingin Melihat Product Populer Salad-Nyoo ?";
     if (confirm(shopp)) {
-        location.href = '../product.html';
+        location.href = 'product.html';
     } else {
-        location.href = '../index.html';
+        location.href = 'index.html';
     }
 }
 
