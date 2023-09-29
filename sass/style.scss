@@ -347,7 +347,7 @@ $minHeight-containerAbout: 780px;
 
 .container-about {
   height: $height-containerAbout;
-  min-height: $min;
+  min-height: $minHeight-containerAbout;
 }
 
 /* About why-us */
