@@ -1,0 +1,764 @@
+/* *, Body, HTML */
+$padding-HTML: 0px;
+$margin-HTML: 0px;
+$box-HTML: border-box;
+$scrollL-HTML: smooth;
+
+* {
+  padding: $padding-HTML;
+  margin: $margin-HTML;
+  box-sizing: $box-HTML;
+  scroll-behavior: $scrollL-HTML;
+}
+
+/* .container-section */
+$height-sectionClass: 100vh;
+
+.container-section {
+  height: $height-sectionClass;
+}
+
+/* #svgiconshoopping */
+$color-svgiconshoopping: #059652;
+$cursor-svgiconshoopping: pointer;
+
+#svgiconshoopping {
+  color: $color-svgiconshoopping;
+  cursor: $cursor-svgiconshoopping;
+}
+
+/* .container-bleker */
+$width-containerBleker: 100%;
+$height-containerBleker: 100%;
+$backround-containerBleker: #fff;
+
+.container-bleker {
+  width: $width-containerBleker;
+  height: $height-containerBleker;
+  background-color: $backround-containerBleker;
+}
+
+/* .navwarpper */
+$position-navwarpper: relative;
+$widht-navwarpper: 100%;
+$height-navwarpper: auto;
+$top-navwarpper: 0px;
+$left-navwarpper: 0px;
+
+.navwarpper {
+  position: $position-navwarpper;
+  width: $widht-navwarpper;
+  height: $height-navwarpper;
+  top: $top-navwarpper;
+  left: $left-navwarpper;
+}
+
+/* .navbar-brand */
+$marginLeft-navbarBrand: 30px;
+$fontSize-navbarBrand: 25px;
+$color-navbarBrand: #7F8487;
+$fontWeight-navbarBrand: bold;
+$fontStyle-navbarBrand: normal;
+$textTransform-navbarBrand: uppercase;
+$fontFamily-navbarBrand: 'Concert One', cursive;
+
+.navbar-brand {
+  margin-left: $marginLeft-navbarBrand;
+  font-size: $fontSize-navbarBrand;
+  color: $color-navbarBrand;
+  font-weight: $fontWeight-navbarBrand;
+  font-style: $fontStyle-navbarBrand;
+  text-transform: $textTransform-navbarBrand;
+  font-family: $fontFamily-navbarBrand;
+}
+
+/* navbar-brand:hover */
+$fontSize-navbarBrandHover: 25px;
+$color-navbarBrandHover: #F73D93;
+$fontWeight-navbarBrandHover: bold;
+$fontStyle-navbarBrandHover: normal;
+$textTransform-navbarBrandHover: uppercase;
+$fontFamily-navbarBrandHover: 'Concert One', cursive;
+$transition-navbarBrandHover: ease-in-out 5s;
+
+.navbar-brand:hover {
+  font-size: $fontSize-navbarBrandHover;
+  color: $color-navbarBrandHover;
+  font-weight: $fontWeight-navbarBrandHover;
+  font-style: $fontStyle-navbarBrandHover;
+  text-transform: $textTransform-navbarBrandHover;
+  font-family: $fontFamily-navbarBrandHover;
+  transition: $transition-navbarBrandHover;
+}
+
+/* container-fludIMG */
+$width-containerfludIMG: 80px;
+$marginLeft-containerFludIMG: 20px;
+$cursor-containerFludIMG: no-drop;
+
+.container-fludIMG {
+  width: $width-containerfludIMG;
+  margin-left: $marginLeft-containerFludIMG;
+  cursor: $cursor-containerFludIMG;
+}
+
+/* nav-link */
+$fontSize-navLink: 18px;
+$color-navLink: #7F8487;
+$fontWeight-navLink: bold;
+$fontStyle-navLink: normal;
+$textTransform-navLink: uppercase;
+$fontFamily-navLink: 'Concert One', cursive;
+
+.nav-link {
+  font-size: $fontSize-navLink;
+  color: $color-navLink;
+  font-weight: $fontWeight-navLink;
+  font-style: $fontStyle-navLink;
+  text-transform: $textTransform-navLink;
+  font-family: $fontFamily-navLink;
+}
+
+/* nav-Link:hover */
+$fontSize-navLinkHover: 18px;
+$borderRadius-navLinkHover: 10px;
+$color-navLinkHover: #FFC7EA;
+$fontWeight-navLinkHover: bold;
+$fontStyle-navLinkHover: normal;
+$textTransform-navLinkHover: uppercase;
+$fontFamily-navLinkHover: 'Concert One', cursive;
+$transition-navLinkHover: ease-in-out 5s;
+$backround-navLinkHover: #27374D;
+
+.nav-link:hover {
+  font-size: $fontFamily-navLinkHover;
+  border-radius: $borderRadius-navLinkHover;
+  color: $color-navLinkHover;
+  font-weight: $fontFamily-navLinkHover;
+  font-style: $fontFamily-navLinkHover;
+  text-transform: $textTransform-navLinkHover;
+  font-family: $fontFamily-navLinkHover;
+  transition: $transition-navLinkHover;
+  background-color: $backround-navLinkHover;
+}
+
+/* Hero */
+$width-Hero: 100%;
+$height-Hero: 80vh;
+$backround-Hero: #f9abc4;
+
+#hero {
+  width: $width-Hero;
+  height: $height-Hero;
+  background: $backround-Hero;
+}
+
+/* container-imges */
+$width-containerImges: 480px;
+$marginTop-containerImges: -150px;
+$cursor-containerImges: no-drop;
+
+.container-imges {
+  width: $width-containerImges;
+  margin-top: $marginTop-containerImges;
+  cursor: $cursor-containerImges;
+}
+
+/* #Hero .container */
+$padding-heroContainer: 72px;
+
+#hero .container {
+  padding-top: $padding-heroContainer;
+}
+
+/* #Hero H1 */
+$margin-heroH1: 0 0 10px 0;
+$fontFamily-heroH1: 'Concert One', cursive;
+$textTransform-heroH1: uppercase;
+$fontSize-heroH1: 30px;
+$fontWeight-heroH1: 700;
+$lineHeight-heroH1: 56px;
+$color-heroH1: #fff;
+
+#hero h1 {
+  margin: $margin-heroH1;
+  font-family: $fontFamily-heroH1;
+  text-transform: $textTransform-heroH1;
+  font-size: $fontFamily-heroH1;
+  font-weight: $fontWeight-heroH1;
+  line-height: $lineHeight-heroH1;
+  color: $color-heroH1;
+}
+
+/* Hero h2 */
+$color-heroH2: rgba(255, 255, 255, 0.6);
+$marginBottom-heroH2: 50px;
+$fontSize-heroH2: 20px;
+$textAlign-heroH2: justify;
+$fontFamily-heroH2: 'Concert One', cursive;
+
+#hero h2 {
+  color: $color-heroH2;
+  margin-bottom: $marginBottom-heroH2;
+  font-size: $fontSize-heroH2;
+  text-align: $textAlign-heroH2;
+  font-family: $fontFamily-heroH2;
+}
+
+/* Hero btn-get-started */
+$fontFamily-herobtnGetStarted: "Jost", sans-serif;
+$fontWeight-herobtnGetStarted: 500;
+$fontSize-herobtnGetStarted: 16px;
+$letterSpacing-herobtnGetStarted: 1px;
+$display-herobtnGetStarted: inline-block;
+$padding-herobtnGetStarted: 10px 28px 11px 28px;
+$borderRadius-herobtnGetStarted: 50px;
+$transition-herobtnGetStarted: 0.5s;
+$margin-herobtnGetStarted: 10px 0 0 0;
+$backround-herobtnGetStarted: #d36c8d;
+$color-herobtnGetStarted: #fff;
+
+#hero .btn-get-started {
+  font-family: $fontFamily-herobtnGetStarted;
+  font-weight: $fontWeight-herobtnGetStarted;
+  font-size: $fontSize-herobtnGetStarted;
+  letter-spacing: $letterSpacing-herobtnGetStarted;
+  display: $display-herobtnGetStarted;
+  padding: $padding-herobtnGetStarted;
+  border-radius: $borderRadius-herobtnGetStarted;
+  transition: $transition-herobtnGetStarted;
+  margin: $margin-herobtnGetStarted;
+  background: $backround-herobtnGetStarted;
+  color: $color-herobtnGetStarted;
+}
+
+/* Hero .btn-watch-video */
+$fontSize-heroBtnWatchVideo: 16px;
+$display-heroBtnWatchVideo: flex;
+$alignItems-heroBtnWatchVideo: center;
+$transition-heroBtnWatchVideo: 0.5s;
+$margin-heroBtnWatchVideo: 10px 0 0 25px;
+$color-heroBtnWatchVideo: #fff;
+$lineHeight-heroBtnWatchVideo: 1;
+
+#hero .btn-watch-video {
+  font-size: $fontSize-heroBtnWatchVideo;
+  display: $display-heroBtnWatchVideo;
+  align-items: $alignItems-heroBtnWatchVideo;
+  transition: $transition-heroBtnWatchVideo;
+  margin: $margin-heroBtnWatchVideo;
+  color: $color-heroBtnWatchVideo;
+  line-height: $lineHeight-heroBtnWatchVideo;
+
+}
+
+/* Hero btn-watch-video i */
+$lineHeight-btnWatchVideoI: 0;
+$color-btnWatchVideoI: #fff;
+$fontSize-btnWatchVideoI: 32px;
+$transition-btnWatchVideoI: 0.3s;
+$marginRight-btnWatchVideoI: 8px;
+
+#hero .btn-watch-video i {
+  line-height: $lineHeight-btnWatchVideoI;
+  color: $color-btnWatchVideoI;
+  font-size: $fontSize-btnWatchVideoI;
+  transition: $transition-btnWatchVideoI;
+  margin-right: $marginRight-btnWatchVideoI;
+}
+
+/* Hero btn-watch-video:hover i */
+$color-heroBtnWatchVideoHoverI: #d36c8d;
+
+#hero .btn-watch-video:hover i {
+  color: $color-heroBtnWatchVideoHoverI;
+}
+
+/* Hero animated */
+$animation-heroAnimated: up-down 2s ease-in-out infinite alternate-reverse both;
+
+#hero .animated {
+  animation: $animation-heroAnimated;
+
+}
+
+/* Media jQuery Hero Mixin */
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+  }
+
+  #hero .animated {
+    animation: none;
+  }
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+
+  #hero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+/* Media jQuery keyframes Mixin */
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* About container-about */
+$height-containerAbout: auto;
+$minHeight-containerAbout: 780px;
+
+.container-about {
+  height: $height-containerAbout;
+  min-height: $min;
+}
+
+/* About why-us */
+$fontFamily-whyUS: 'Concert One', cursive;
+$color-whyUS: #444444;
+
+#why-us {
+  font-family: $fontFamily-whyUS;
+  color: $color-whyUS;
+}
+
+/* About A */
+$color-A: #d36c8d;
+$textDecoration-A: none;
+
+a {
+  color: $color-A;
+  text-decoration: $textDecoration-A;
+}
+
+/* About A:hover */
+$color-AHover: #a43357;
+$textDecoration-AHover: none;
+
+a:hover {
+  color: $color-AHover;
+  text-decoration: $textDecoration-AHover;
+}
+
+/* About section-bg */
+$backround-sectionBG: #f3f5fa;
+
+.section-bg {
+  background-color: $backround-sectionBG;
+}
+
+/* About section-title */
+$textAlign-sectionTitle: center;
+$paddingBottom-sectionTitle: 30px;
+
+.section-title {
+  text-align: $textAlign-sectionTitle;
+  padding-bottom: $paddingBottom-sectionTitle;
+}
+
+/* About judul-header, section-title h2 */
+$fontSize-JHsectionTitleH2: 32px;
+$fontWeight-JHsectionTitleH2: bold;
+$textTransform-JHsectionTitleH2: uppercase;
+$marginBottom-JHsectionTitleH2: 20px;
+$paddingBottom-JHsectionTitleH2: 20px;
+$position-JHsectionTitleH2: relative;
+$color-JHsectionTitleH2: #d36c8d;
+
+.judul-header,
+.section-title h2 {
+  font-size: $fontSize-JHsectionTitleH2;
+  font-weight: $fontWeight-JHsectionTitleH2;
+  text-transform: $textTransform-JHsectionTitleH2;
+  margin-bottom: $marginBottom-JHsectionTitleH2;
+  padding-bottom: $paddingBottom-JHsectionTitleH2;
+  position: $position-JHsectionTitleH2;
+  color: $color-JHsectionTitleH2;
+}
+
+/* About section-title h2::before */
+$content-sectionTitleH2Before: "";
+$position-sectionTitleH2Before: absolute;
+$display-sectionTitleH2Before: block;
+$width-sectionTitleH2Before: 120px;
+$height-sectionTitleH2Before: 1px;
+$backround-sectionTitleH2Before: #ddd;
+$bottom-sectionTitleH2Before: 1px;
+$left-sectionTitleH2Before: calc(50% - 60px);
+
+.section-title h2::before {
+  content: $content-sectionTitleH2Before;
+  position: $position-sectionTitleH2Before;
+  display: $display-sectionTitleH2Before;
+  width: $width-sectionTitleH2Before;
+  height: $height-sectionTitleH2Before;
+  background: $backround-sectionTitleH2Before;
+  bottom: $bottom-sectionTitleH2Before;
+  left: $left-sectionTitleH2Before;
+}
+
+/* About section-title h2::after */
+$content-sectionTitleH2After: "";
+$position-sectionTitleH2After: absolute;
+$display-sectionTitleH2After: block;
+$width-sectionTitleH2After: 40px;
+$height-sectionTitleH2After: 3px;
+$backround-sectionTitleH2After: #d36c8d;
+$bottom-sectionTitleH2After: 0;
+$left-sectionTitleH2After: calc(50% - 20px);
+
+.section-title h2::after {
+  content: $content-sectionTitleH2After;
+  position: $position-sectionTitleH2After;
+  display: $display-sectionTitleH2After;
+  width: $width-sectionTitleH2After;
+  height: $height-sectionTitleH2After;
+  background: $backround-sectionTitleH2After;
+  bottom: $bottom-sectionTitleH2After;
+  left: $left-sectionTitleH2After;
+}
+
+/* About sectionTitle P */
+$marginBottom-sectionTitleP: 0;
+
+.section-title p {
+  margin-bottom: $marginBottom-sectionTitleP;
+}
+
+/* Media jQuery About / why US Mixin */
+@media (max-width: 768px) {
+  .clients img {
+    max-width: 40%;
+  }
+}
+
+.oLD{
+  font-family: 'Concert One', cursive;
+}
+
+.why-us .content {
+  padding: 60px 100px 0 100px;
+}
+
+.why-us .content h4 {
+  font-weight: 400;
+  font-size: 34px;
+  color: #cd5d8e;
+}
+
+.why-us .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.why-us .content p {
+  font-size: 15px;
+  color: #000000;
+}
+
+.why-us .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.why-us .accordion-list {
+  padding: 0 100px 60px 100px;
+}
+
+.why-us .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.why-us .accordion-list li+li {
+  margin-top: 15px;
+}
+
+.why-us .accordion-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.why-us .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.why-us .accordion-list span {
+  color: #d36c8d;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.why-us .accordion-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.why-us .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.why-us .accordion-list .icon-show {
+  display: none;
+}
+
+.why-us .accordion-list a.collapsed {
+  color: #343a40;
+}
+
+.why-us .accordion-list a.collapsed:hover {
+  color: #b94066;
+}
+
+.why-us .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.why-us .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+
+  .why-us .content,
+  .why-us .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .why-us .img {
+    min-height: 400px;
+  }
+
+  .why-us .content {
+    padding-top: 10px;
+  }
+
+  .why-us .accordion-list {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .why-us .img {
+    min-height: 200px;
+  }
+}
+
+/* menu nav-tabs */
+$border-menuNavTabs: 0;
+$marginTop-menuNavTabs: 30px;
+
+.menu .nav-tabs {
+  border: $border-menuNavTabs;
+  margin-top: $marginTop-menuNavTabs;
+}
+
+/* menu nav-link */
+$margin-menuNavLink: 0 10px;
+$padding-menuNavLink: 10px 5px;
+$transition-menuNavLink: 0.3s;
+$color-menuNavLink: var(--color-secondary);
+$borderRadius-menuNavLink: 0;
+$cursor-menuNavLink: pointer;
+$height-menuNavLink: 100%;
+$border-menuNavLink: 0;
+$borderBottom-menuNavLink: 2px solid #b6b6bf;
+
+.menu .nav-link {
+  margin: $margin-menuNavLink;
+  padding: $padding-menuNavLink;
+  transition: $transition-menuNavLink;
+  color: $color-menuNavLink;
+  border-radius: $borderRadius-menuNavLink;
+  cursor: $cursor-menuNavLink;
+  height: $height-menuNavLink;
+  border: $border-menuNavLink;
+  border-bottom: $borderBottom-menuNavLink;
+}
+
+/* menu nav-link i */
+$paddingRight-menuNavLinkI: 15px;
+$fontSize-menuNavLinkI: 48px;
+
+.menu .nav-link i {
+  padding-right: $paddingRight-menuNavLinkI;
+  font-size: $fontSize-menuNavLinkI;
+}
+
+/* menu nav-link h4 */
+$fontSize-menuNavLinkH4: 18px;
+$fontWeight-menuNavLinkH4: 400;
+$margin-menuNavLinkH4: 0;
+$fontFamily-menuNavLinkH4: var(--font-secondary);
+
+.menu .nav-link h4 {
+  font-size: $fontSize-menuNavLinkH4;
+  font-weight: $fontSize-menuNavLinkH4;
+  margin: $margin-menuNavLinkH4;
+  font-family: $fontFamily-menuNavLinkH4;
+}
+
+/* menu nav-link:hover */
+$color-menuNavLinkHover: var(--color-primary);
+$backround-menuNavLinkHover: white;
+$transition-menuNavLinkHover: ease-in-out 3s;
+
+.menu .nav-link:hover {
+  color: $color-menuNavLinkHover;
+  background-color: $backround-menuNavLinkHover;
+  transition: $transition-menuNavLinkHover;
+}
+
+/* menu nav-link.active */
+$color-menuNavLinkActive: var(--color-primary);
+$borderColor: var(--color-primary);
+
+.menu .nav-link.active {
+  color: $color-menuNavLinkActive;
+  border-color: $borderColor;
+}
+
+/* menu tab-content tab-header */
+$padding-menuTabContentHeader: 30px 0;
+
+.menu .tab-content .tab-header {
+  padding: $padding-menuTabContentHeader;
+}
+
+/* menu tab-content tab-header p */
+$fontSize-menuTabContentHeaderP: 14px;
+$textTransform-menuTabContentHeaderP: uppercase;
+$color-menuTabContentHeaderP: #676775;
+$marginBottom-menuTabContentHeaderP: 0;
+
+.menu .tab-content .tab-header p {
+  font-size: $fontSize-menuTabContentHeaderP;
+  text-transform: $textTransform-menuTabContentHeaderP;
+  color: $color-menuTabContentHeaderP;
+  margin-bottom: $marginBottom-menuTabContentHeaderP;
+}
+
+/* menu tab-content tab-header h3 */
+$fontSize-menuTabContentHeaderH3: 36px;
+$fontWeight-menuTabContentHeaderH3: 600;
+$color-menuTabContentHeaderH3: var(--color-primary);
+
+.menu .tab-content .tab-header h3 {
+  font-size: $fontSize-menuTabContentHeaderH3;
+  font-weight: $fontWeight-menuTabContentHeaderH3;
+  color: $color-menuTabContentHeaderH3;
+}
+
+/* menu tab-content menu-item */
+$mozTextAlignLast-menuTabContentItem: center;
+$textAlign-menuTabContentItem: center;
+
+.menu .tab-content .menu-item {
+  -moz-text-align-last: $mozTextAlignLast-menuTabContentItem;
+  text-align-last: $textAlign-menuTabContentItem;
+}
+
+/* menu tab-content menu-item menu-img */
+$padding-menuTabContentItemImg: 0 60px;
+$marginBottom-menuTabContentItemImg: 15px;
+$width-menuTabContentItemImg: 400px;
+
+.menu .tab-content .menu-item .menu-img {
+  padding: $padding-menuTabContentItemImg;
+  margin-bottom: $marginBottom-menuTabContentItemImg;
+  width: $width-menuTabContentItemImg;
+}
+
+/* menu tab-content menu-item h4 */
+$fontSize-menuTabContentItemH4: 22px;
+$fontWeight-menuTabContentItemH4: 500;
+$color-menuTabContentItemH4: var(--color-secondary);
+$fontFamily-menuTabContentItemH4: var(--font-secondary);
+$fontWeight-menuTabContentItemH4: 30px;
+$marginBottom-menuTabContentItemH4: 5px;
+
+.menu .tab-content .menu-item h4 {
+  font-size: $fontSize-menuTabContentItemH4;
+  font-weight: $fontWeight-menuTabContentItemH4;
+  color: $color-menuTabContentItemH4;
+  font-family: $fontFamily-menuTabContentItemH4;
+  font-weight: $fontWeight-menuTabContentItemH4;
+  margin-bottom: $marginBottom-menuTabContentItemH4;
+}
+
+/* menu tab-content menu-item ingredients */
+$fontFamily-menuTabContentItemIngredients: var(--font-secondary);
+$color-menuTabContentItemIngredients: #8d8d9b;
+$marginBottom-menuTabContentItemIngredients: 5px;
+
+.menu .tab-content .menu-item .ingredients {
+  font-family: $fontFamily-menuTabContentItemIngredients;
+  color: $color-menuTabContentItemIngredients;
+  margin-bottom: $marginBottom-menuTabContentItemIngredients;
+}
+
+/* menu tab-content menu-item price */
+$fontSize-menuTabContentItemPrice: 24px;
+$fontWeight-menuTabContentItemPrice: 700;
+$color-menuTabContentItemPrice: var(--color-primary);
+
+.menu .tab-content .menu-item .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
