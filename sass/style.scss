@@ -128,17 +128,21 @@ $transition-navbarBrandHover: ease-in-out 5s;
 /* container-BTSearch */
 $backround-containerBTSearch: var(--button-color);
 $color-containerBTSearch: var(--input-color1);
+$fontFamily-containerBTSearch: 'cursive';
 
 .container-BTSearch{
   background-color: $backround-containerBTSearch;
   color: $color-containerBTSearch;
+  font-family: $fontFamily-containerBTSearch, 'Concert One';
 }
 
 /* form-control::placeholder */
 $color-formControl: var(--input-color3);
+$fontFamily-formControl: cursive;
 
 .form-control::placeholder{
   color: $color-formControl;
+  font-family: $fontFamily-formControl, 'Concert One';
 }
 
 /* container-fludIMG */
@@ -649,6 +653,13 @@ $marginBottom-sectionTitleP: 0;
   }
 }
 
+/* container-MEN */
+$marginTop-containerMEN: -89px;
+
+#container-MEN {
+  margin-top: $marginTop-containerMEN;
+}
+
 /* menu nav-tabs */
 $border-menuNavTabs: 0;
 $marginTop-menuNavTabs: 30px;
@@ -909,21 +920,247 @@ $fontFamily-doon: 'Concert One', cursive;
   font-family: $fontFamily-doon;
 }
 
+/*containerteam*/
+$marginTop-containerTeam: 340px;
 
+#containerTeam {
+    margin-top: $marginTop-containerTeam;
+  }
 
+/*img-fluid*/
+$width-imgFluid: 200px;
 
+.img-fluid {
+    width: $width-imgFluid;
+  }
 
+/*containertem*/
+$position-containerTem: relative;
+$textAlign-containerTem: center;
+$marginTop-containerTem: -430px;
+$marginLeft-containerTem:20px;
+$fontSize-containerTem: 30px;
+$fontWeight-containerTem: bold;
+$textTransform-containerTem: uppercase;
+$color-containerTem: #d36c8d;
+$fontFamily-containerTem: 'Concert One', cursive;
 
+.containerTem {
+    position: $position-containerTem;
+    text-align: $textAlign-containerTem;
+    margin-top: $marginTop-containerTem;
+    margin-left: $marginLeft-containerTem;
+    font-size: $fontSize-containerTem;
+    font-weight: $fontWeight-containerTem;
+    text-transform: $textTransform-containerTem;
+    color: $color-containerTem;
+    font-family: $fontFamily-containerTem;
+  }
 
+/*containerPTeams*/
+$position-containerPTeams: relative;
+$marginLeft-containerPTeams: 20px;
+$fontSize-containerPTeams: 15px;
+$fontWeight-containerPTeams: bold;
+$textTransform-containerPTeams: uppercase;
+$color-containerPTeams: #8d8d9b;
+$fontFamily-containerPTeams: 'Concert One', cursive;
 
+.containerPTeams {
+    position: $position-containerPTeams;
+    margin-left: $marginLeft-containerPTeams;
+    font-size: $fontSize-containerPTeams;
+    font-weight: $fontWeight-containerPTeams;
+    text-transform: $textTransform-containerPTeams;
+    color: $color-containerPTeams;
+    font-family: $fontFamily-containerPTeams;
+  }
 
+/*.teams .team-member*/
+$overFlow-teamsMember: hidden;
+$textAlign-teamsMember: center;
+$borderRadius-teamsMember: 5px;
+$background-teamsMember: #fff;
+$boxShadow-teamsMember: 0px 0 30px rgba(55, 55, 63, 0.08);
+$transition-teamsMember: 0.3s;
+$width-teamsMember: 380px;
+$height-teamsMember: auto;
 
+.teams .team-member {
+    overflow: $overFlow-teamsMember;
+    text-align: $textAlign-teamsMember;
+    border-radius: $borderRadius-teamsMember;
+    background: $background-teamsMember;
+    box-shadow: $boxShadow-teamsMember;
+    transition: $transition-teamsMember;
+    width: $width-teamsMember;
+    height: $height-teamsMember;
+  }
 
+/*.teams .team-member .member-img */
+$position-teamMemberImg: relative;
+$overFlow-teamMemberImg: hidden;
+$marginTop-teamMemberImg: 40px;
 
+.teams .team-member .member-img {
+    position: $position-teamMemberImg;
+    overflow: $overFlow-teamMemberImg;
+    margin-top: $marginTop-teamMemberImg;
+  }
 
+/*.teams .team-member .member-img:after */
+$position-teamMemberImgAfter: absolute;
+$content-teamMemberImgAfter: "";
+$left-teamMemberImgAfter: 0;
+$bottom-teamMemberImgAfter: 0;
+$height-teamMemberImgAfter: 100%;
+$width-teamMemberImgAfter: 100%;
+$background-teamMemberImgAfter: url(../img/team-shape.svg) no-repeat center bottom;
+$backgroundSize-teamMemberImgAfter: contain;
+$zIndex-teamMemberImgAfter: 1;
 
+.teams .team-member .member-img:after {
+    position: $position-teamMemberImgAfter;
+    content: $content-teamMemberImgAfter;
+    left: $left-teamMemberImgAfter;
+    bottom: $bottom-teamMemberImgAfter;
+    height: $height-teamMemberImgAfter;
+    width: $width-teamMemberImgAfter;
+    background:$background-teamMemberImgAfter;
+    background-size: $backgroundSize-teamMemberImgAfter;
+    z-index: $zIndex-teamMemberImgAfter;
+  }
 
-/* Media Nav-Link Dari 990px - 577px */
+/*.teams .team-member .social */
+$position-teamsSocial:absolute;
+$right-teamsSocial: -100%;
+$top-teamsSocial: 30px;
+$opacity-teamsSocial: 0;
+$borderRadius-teamsSocial: 4px;
+$transition-teamsSocial: 0.5s;
+$background-teamsSocial: rgba(214, 18, 172, 0.3);
+$zIndex-teamsSocial: 2;
+
+.teams .team-member .social {
+    position: $position-teamsSocial;
+    right: $right-teamsSocial;
+    top: $top-teamsSocial;
+    opacity: $opacity-teamsSocial;
+    border-radius: $borderRadius-teamsSocial;
+    transition: $transition-teamsSocial;
+    background: $background-teamsSocial;
+    z-index: $zIndex-teamsSocial;
+  }
+
+/*.teams .team-member .social a */
+$transition-memberSocialA: color 0.3s;
+$color-memberSocialA: rgba(55, 55, 63, 0.4);
+$margin-memberSocialA: 15px 12px;
+$display-memberSocialA: block;
+$lineHeight-memberSocialA: 0;
+$textAlign-memberSocialA: center;
+
+.teams .team-member .social a {
+    transition: $transition-memberSocialA;
+    color: $color-memberSocialA;
+    margin: $margin-memberSocialA;
+    display: $display-memberSocialA;
+    line-height: $lineHeight-memberSocialA;
+    text-align: $textAlign-memberSocialA;
+  }
+
+/* .teams .team-member .social a:hover */
+$color-memberSocialAHover: rgba(55, 55, 63, 0.9);
+
+.teams .team-member .social a:hover {
+    color: $color-memberSocialAHover;
+  }
+
+/* .teams .team-member .social i */
+$fontSize-memberSocialI: 18px;
+
+.teams .team-member .social i {
+    font-size: $fontSize-memberSocialI;
+  }
+
+/* .teams .team-member .member-info */
+$padding-memberInfo: 10px 15px 20px 15px;
+
+.teams .team-member .member-info {
+    padding: $padding-memberInfo;
+  }
+
+/* .teams .team-member .member-info h4 */
+$fontWeight-memberInfoH4: 700;
+$marginBottom-memberInfoH4: 5px;
+$fontSize-memberInfoH4: 20px;
+$color-memberInfoH4: var(--color-secondary);
+
+.teams .team-member .member-info h4 {
+    font-weight: $fontWeight-memberInfoH4;
+    margin-bottom: $marginBottom-memberInfoH4;
+    font-size: $fontSize-memberInfoH4;
+    color: $color-memberInfoH4;
+  }
+  
+/* .teams .team-member .member-info span */
+$display-memberInfoSpan: block;
+$fontSize-memberInfoSpan: 14px;
+$fontWeight-memberInfoSpan: 400;
+$color-memberInfoSpan: rgba(33, 37, 41, 0.4);
+
+.teams .team-member .member-info span {
+    display: $display-memberInfoSpan;
+    font-size: $fontSize-memberInfoSpan;
+    font-weight: $fontSize-memberInfoSpan;
+    color: $color-memberInfoSpan;
+  }
+
+/* .teams .team-member .member-info p */
+$fontStyle-memberInfoP: italic;
+$fontSize-memberInfoP: 14px;
+$paddingTop-memberInfoP: 15px;
+$lineHeight-memberInfoP: 26px;
+$color-memberInfoP: rgba(33, 37, 41, 0.7);
+
+.teams .team-member .member-info p {
+    font-style: $fontStyle-memberInfoP;
+    font-size: $fontSize-memberInfoP;
+    padding-top: $paddingTop-memberInfoP;
+    line-height: $lineHeight-memberInfoP;
+    color: $color-memberInfoP;
+  }
+
+/* .teams .team-member:hover */
+$transform-memberHover: scale(1.08);
+$boxShadow-memberHover: 0px 0 30px rgba(55, 55, 63, 0.15);
+
+.teams .team-member:hover {
+    transform: $transform-memberHover;
+    box-shadow: $boxShadow-memberHover;
+  }
+
+/*.teams .team-member:hover .social */
+$right-memberHoverSocial: 8px;
+$opacity-memberHoverSocial: 1;
+
+.teams .team-member:hover .social {
+    right: $right-memberHoverSocial;
+    opacity: $opacity-memberHoverSocial;
+  }
+
+/*foto rani*/
+$width-rani: 300px;
+$marginTop-rani: -50px;
+$marginLeft-rani: -100px;
+
+#ranii{
+    width: $width-rani;
+    margin-top: $marginTop-rani;
+    margin-left: $marginLeft-rani;
+  }
+
+  /* Media Nav-Link Dari 990px - 577px */
 @media(max-width: 990px) and (min-width: 577px) {
   .nav-link {
       text-align: center;
