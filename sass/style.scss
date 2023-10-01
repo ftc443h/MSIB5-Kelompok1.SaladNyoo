@@ -1,10 +1,10 @@
 /* Root Varible Dan Tipe Data */
 :root{
-  --tag-color: #F73D93;
+  --tag-color: #d36c8d;
   --text-color: #7F8487;
-  --button-color: #F73D93;
+  --button-color: #d36c8d;
   --input-color1: #fff;
-  --input-color2: #F73D93;
+  --input-color2: #d36c8d;
   --input-color3: #7F8487;
   --h1-h2-h3-h4-h5-h6-color: #7F8487;
 }
@@ -12,7 +12,7 @@
 /* Map-Get Alert color */
 $alert: (
   'dark-1': #070A52,
-  'dark-2': #F73D93,
+  'dark-2': #d36c8d,
   'dark-3': #16003B,
   'dark-4': #413F42,
   'dark-5': #7F8487,
@@ -267,7 +267,7 @@ $letterSpacing-herobtnGetStarted: 1px;
 $display-herobtnGetStarted: inline-block;
 $padding-herobtnGetStarted: 10px 28px 11px 28px;
 $borderRadius-herobtnGetStarted: 50px;
-$transition-herobtnGetStarted: 0.5s;
+$transition-herobtnGetStarted: 8s;
 $margin-herobtnGetStarted: 10px 0 0 0;
 $backround-herobtnGetStarted: #d36c8d;
 $color-herobtnGetStarted: #fff;
@@ -1148,6 +1148,72 @@ $opacity-memberHoverSocial: 1;
     right: $right-memberHoverSocial;
     opacity: $opacity-memberHoverSocial;
   }
+
+/* bi-instagram */
+$color-biInstagram: #F73D93;
+$fontWeight-biInstagram: bold;
+
+.bi-instagram{
+  color: $color-biInstagram;
+  font-weight: $fontWeight-biInstagram;
+}
+
+/* bi-facebook */
+$color-biFacebook: #F73D93;
+$fontWeight-biFacebook: bold;
+
+.bi-facebook{
+  color: $color-biFacebook;
+  font-weight: $fontWeight-biFacebook;
+}
+
+/* bi-twitter */
+$color-biTwitter: #F73D93;
+$fontWeight-biTwitter: bold;
+
+.bi-twitter{
+  color: $color-biTwitter;
+  font-weight: $fontWeight-biTwitter;
+}
+
+/* bi-linkedin */
+$color-biLinkedin: #F73D93;
+$fontWeight-biLinkedin: bold;
+
+.bi-linkedin{
+  color: $color-biLinkedin;
+  font-weight: $fontWeight-biLinkedin;
+}
+
+/* bi-git */
+$color-biGit: #F73D93;
+$fontWeight-biGit: bold;
+
+.bi-git{
+  color: $color-biGit;
+  font-weight: $fontWeight-biGit;
+}
+
+/* top */
+$position-topIcons: fixed;
+$display-topIcons: flex;
+$color-topIcons: #d36c8d;
+$cursor-topIcons: pointer;
+$bottom-topIcons: 20px;
+$marginLeft-topIcons: 20px;
+$fontSize-topIcons: 20px;
+$scroll-topIcons: smooth;
+
+#BackHome{
+  position: $position-topIcons;
+  display: $display-topIcons;
+  margin-left: $marginLeft-topIcons;
+  bottom: $bottom-topIcons;
+  color: $color-topIcons;
+  cursor: $cursor-topIcons;
+  font-size: $fontSize-topIcons;
+  scroll-behavior: $scroll-topIcons;
+}
 
 /*foto rani*/
 $width-rani: 300px;

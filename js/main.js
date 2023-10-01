@@ -20,3 +20,7 @@ setInterval(function () {
         pragraff[1].style.color = "white";
     }, 600)
 }, 2000);
+
+const goToTo = () => {
+    return location.href='#home';
+}
