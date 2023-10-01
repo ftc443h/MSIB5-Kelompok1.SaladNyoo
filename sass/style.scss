@@ -1278,7 +1278,7 @@ $background-icon: palevioletred;
 $border-radius-icon: 50%;
 $margin-right-icon: 15px;
 
-.info-item.icon{
+.info-item .icon{
     display: $display-icon;
     align-items: $align-items-icon;
     justify-content: $justify-content-icon;

@@ -802,7 +802,6 @@ a:hover {
   margin-left: -100px;
 }
 
-/*Section Contact*/
 .Contact {
   margin-top: 50px;
   margin-bottom: 20px;
@@ -812,12 +811,10 @@ a:hover {
   font-family: "Concert One", cursive;
 }
 
-/* LKM */
 .LKM {
   color: #8d8d9b;
 }
 
-/* info-item */
 .info-item {
   background: #F3FDE8;
   padding: 30px;
@@ -826,8 +823,7 @@ a:hover {
   border-radius: 5px;
 }
 
-/* info-item icon */
-.info-item.icon {
+.info-item .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -841,7 +837,6 @@ a:hover {
   margin-right: 15px;
 }
 
-/* php-email-form */
 .php-email-form {
   width: 100%;
   margin-top: 30px;
@@ -849,13 +844,10 @@ a:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 
-/*php-email-form*/
 .php-email-form .form-group {
   padding-bottom: 20px;
 }
 
-
-/* php-email-form error-message */
 .php-email-form .error-message {
   display: none;
   color: #fff;
@@ -865,12 +857,10 @@ a:hover {
   font-weight: 600;
 }
 
-/*php-email-form error-message br br*/
 .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
-/*php-email-form sent-message*/
 .php-email-form .sent-message {
   display: none;
   color: #fff;
@@ -880,7 +870,6 @@ a:hover {
   font-weight: 600;
 }
 
-/*php-email-form loading*/
 .php-email-form .loading {
   display: none;
   background: #fff;
@@ -888,7 +877,6 @@ a:hover {
   padding: 15px;
 }
 
-/*php-email-form loading::before*/
 .php-email-form .loading:before {
   content: "";
   display: inline-block;
@@ -901,7 +889,6 @@ a:hover {
   animation: animate-loading 1s linear infinite;
 }
 
-/*php-email-form input & textarea*/
 .php-email-form input,
 .php-email-form textarea {
   border-radius: 0;
@@ -909,23 +896,19 @@ a:hover {
   font-size: 14px;
 }
 
-/*php-email-form input & textarea focus*/
 .php-email-form input:focus,
 .php-email-form textarea:focus {
   border-color: var(--color-primary);
 }
 
-/*php-email-form input*/
 .php-email-form input {
   height: 48px;
 }
 
-/*php-email-form textarea*/
 .php-email-form textarea {
   padding: 10px 12px;
 }
 
-/*php-email-form button*/
 .php-email-form button {
   background: palevioletred;
   border: 0;
@@ -935,12 +918,10 @@ a:hover {
   border-radius: 50px;
 }
 
-/*php-email-form button:hover*/
 .php-email-form button:hover {
   background: #ec2727;
 }
 
-/*footer*/
 .footer {
   font-size: 14px;
   background-color: #183D3D;
@@ -948,7 +929,6 @@ a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/*footer icon*/
 .footer .icon {
   margin-top: 4px;
   margin-right: 4px;
@@ -956,7 +936,6 @@ a:hover {
   line-height: 0;
 }
 
-/*footer social links a*/
 .footer .social-links a {
   display: flex;
   align-items: center;
@@ -971,23 +950,18 @@ a:hover {
   transition: 0.3s;
 }
 
-
-/*footer copyright*/
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
-/*footer credits*/
 .footer.credits {
   padding-top: 4px;
   text-align: center;
   font-size: 13px;
 }
 
-/*footer credits a*/
 .footer.credits a {
   color: #fff;
 }
