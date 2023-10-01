@@ -1226,6 +1226,299 @@ $marginLeft-rani: -100px;
     margin-left: $marginLeft-rani;
   }
 
+//Class Contact
+$margin-top-Contact: 50px;
+$margin-bottom-Contact: 20px;
+$font-size-Contact: 30px;
+$font-weight-Contact: bold;
+$color-Contact: #d36c8d;
+$font-family-Contact: 'Concert One', cursive;
+
+.Contact{
+    margin-top: $margin-top-Contact;
+    margin-bottom: $margin-bottom-Contact;
+    font-size: $font-size-Contact;
+    font-weight: $font-weight-Contact;
+    color: $color-Contact;
+    font-family: $font-family-Contact;
+}
+
+//Class LKM
+$color-LKM:#8d8d9b;
+
+.LKM{
+    color: $color-LKM;
+}
+
+//Class info-item
+$background-info-item: #F3FDE8;
+$padding-info-item: 30px;
+$height-info-item: 90px;
+$margin-info-item: 5px;
+$border-radius-info-item: 5px;
+
+.info-item{
+    background: $background-info-item;
+    padding: $padding-info-item;
+    height: $height-info-item;
+    margin: $margin-info-item;
+    border-radius: $border-radius-info-item;
+}
+
+//Class Icon
+$display-icon: flex;
+$align-items-icon: center;
+$justify-content-icon: center;
+$width-icon: 56px;
+$height-icon: 56px;
+$font-size-icon: 24px;
+$line-height-icon: 0;
+$color-icon: white;
+$background-icon: palevioletred;
+$border-radius-icon: 50%;
+$margin-right-icon: 15px;
+
+.info-item.icon{
+    display: $display-icon;
+    align-items: $align-items-icon;
+    justify-content: $justify-content-icon;
+    width: $width-icon;
+    height: $height-icon;
+    font-size: $font-size-icon;
+    line-height: $line-height-icon;
+    color: $color-icon;
+    background: $background-icon;
+    border-radius: $border-radius-icon;
+    margin-right: $margin-right-icon;
+}
+
+//Class php-email-form
+$width-php-email-form: 100%;
+$margin-top-php-email-form: 30px;
+$background-php-email-form: #fff;
+$box-shadow-php-email-form: 0 0 30px rgba(0, 0, 0, 0.08);
+
+.php-email-form{
+    width: $width-php-email-form;
+    margin-top: $margin-top-php-email-form;
+    background: $background-php-email-form;
+    box-shadow: $box-shadow-php-email-form;
+}
+
+//Class form-group
+$padding-bottom-form-group: 20px;
+
+.php-email-form .form-group{
+    padding-bottom: $padding-bottom-form-group;
+}
+
+//Class error-message
+$display-error-message: none;
+$color-error-message: #fff;
+$background-error-message: #df1529;
+$text-align-error-message: left;
+$padding-error-message: 15px;
+$font-weight-error-message: 600;
+
+.php-email-form .error-message{
+    display: $display-error-message;
+    color: $color-error-message;
+    background: $background-error-message;
+    text-align: $text-align-error-message;
+    padding: $padding-error-message;
+    font-weight: $font-weight-error-message;
+}
+
+//Class error-message br+br
+$margin-top-error-message: 25px;
+
+.php-email-form .error-message br+br{
+    margin-top: $margin-top-error-message;
+}
+
+//Class sent-message
+$display-sent-message: none;
+$color-sent-message: #fff;
+$background-sent-message: #059652;
+$text-align-sent-message: center;
+$padding-sent-message: 15px;
+$font-weight-sent-message: 600;
+
+.php-email-form .sent-message{
+    display: $display-sent-message;
+    color: $color-sent-message;
+    background: $background-sent-message;
+    text-align: $text-align-sent-message;
+    padding: $padding-sent-message;
+    font-weight: $font-weight-sent-message;
+}
+
+//Class loading
+$display-loading: none;
+$background-loading: #fff;
+$text-align-loading: center;
+$padding-loading: 15px;
+
+.php-email-form .loading{
+    display: $display-loading;
+    background: $background-loading;
+    text-align: $text-align-loading;
+    padding: $padding-loading;
+}
+
+//Class loading:before
+$content-loading-before: "";
+$display-loading-before: inline-block;
+$border-radius-loading-before: 50%;
+$width-loading-before: 24px;
+$height-loading-before: 24px;
+$margin-loading-before: 0 10px -6px 0;
+$border-loading-before: 3px solid #059652;
+$border-top-color-loading-before: #fff;
+$animation-loading-before: animate-loading 1s linear infinite;
+
+.php-email-form .loading:before{
+    content: $content-loading-before;
+    display: $display-loading-before;
+    border-radius: $border-radius-loading-before;
+    width: $width-loading-before;
+    height: $height-loading-before;
+    margin: $margin-loading-before;
+    border: $border-loading-before;
+    border-top: $border-top-color-loading-before;
+    animation: $animation-loading-before;
+}
+
+//Class input & textarea
+$border-radius-input-textarea: 0;
+$box-shadow-input-textarea: none;
+$font-size-input-textarea: 14px;
+$border-color-input-textarea: var(--color-primary);
+$height-input: 48px;
+$padding-textarea:10px 12px;
+
+.php-email-form input,
+.php-email-form textarea{
+    border-radius: $border-radius-input-textarea;
+    box-shadow: $box-shadow-input-textarea;
+    font-size: $font-size-input-textarea;
+}
+
+.php-email-form input:focus,
+.php-email-form textarea:focus{
+    border-color: $border-color-input-textarea;
+}
+
+.php-email-form input{
+    height: $height-input;
+}
+
+.php-email-form textarea{
+    padding: $padding-textarea;
+}
+
+//Class button
+$background-button: palevioletred;
+$border-button: 0;
+$padding-button: 12px 40px;
+$color-button: #fff;
+$transition-button: 0.4s;
+$border-radius-button: 50px;
+$background-button-hover: #ec2727;
+
+.php-email-form button{
+    background: $background-button;
+    border: $border-button;
+    padding: $padding-button;
+    color: $color-button;
+    transition: $transition-button;
+    border-radius: $border-radius-button;
+}
+
+.php-email-form button:hover{
+    background: $background-button-hover;
+}
+
+//Class footer
+$font-size-footer: 14px;
+$background-color-footer: #183D3D;
+$padding-footer: 50px 0;
+$color-footer: rgba(255, 255, 255, 0.7);
+
+.footer{
+    font-size: $font-size-footer;
+    background-color: $background-color-footer;
+    padding: $padding-footer;
+    color: $color-footer;
+}
+
+//Class icon footer
+$margin-top-icon-footer: 4px;
+$margin-right-icon-footer: 10px;
+$font-size-icon-footer: 20px;
+$line-height-icon-footer: 0;
+
+.footer .icon{
+    margin-top: $margin-top-icon-footer;
+    margin-right: $margin-top-icon-footer;
+    font-size: $font-size-footer;
+    line-height: $line-height-icon-footer;
+}
+
+//Class social-links
+$display-social-links: flex;
+$align-items-social-links: center;
+$justify-content-social-links: center;
+$width-social-links: 40px;
+$height-social-links: 40px;
+$border-radius-social-links: 50%;
+$border-social-links: 1px solid rgba(255, 255, 255, 0.2);
+$font-size-social-links: 16px;
+$color-social-links: rgba(255, 255, 255, 0.7);
+$margin-right-social-links: 10px;
+$transition-social-links: 0.3s;
+
+.footer .social-links a {
+    display: $display-social-links;
+    align-items: $align-items-social-links;
+    justify-content: $justify-content-social-links;
+    width: $width-social-links;
+    height: $height-social-links;
+    border: $border-social-links;
+    border-radius: $border-radius-social-links;
+    font-size: $font-size-social-links;
+    color: $color-social-links;
+    margin-right: $margin-right-social-links;
+    transition: $transition-social-links;
+}
+
+//Class copyright
+$text-align-copyright: center;
+$padding-top-copyright: 30px;
+$border-top-copyright: 1px solid rgba(255, 255, 255, 0.1);
+
+.footer .copyright{
+    text-align: $text-align-copyright;
+    padding-top: $padding-top-copyright;
+    border-top: $border-top-copyright;
+}
+
+//Class credits
+$padding-top-credits: 4px;
+$text-align-credits: center;
+$font-size-credits: 13px;
+$color-credits: #fff;
+
+.footer.credits{
+    padding-top: $padding-top-credits;
+    text-align: $text-align-credits;
+    font-size: $font-size-credits;
+}
+
+.footer.credits a {
+    color: $color-credits;
+}
+
   /* Media Nav-Link Dari 990px - 577px */
 @media(max-width: 990px) and (min-width: 577px) {
   .nav-link {
