@@ -261,7 +261,7 @@ $fontFamily-heroH2: 'Concert One', cursive;
 
 /* Hero btn-get-started */
 $fontFamily-herobtnGetStarted: "Jost", sans-serif;
-$fontWeight-herobtnGetStarted: 500;
+$fontWeight-herobtnGetStarted: bold;
 $fontSize-herobtnGetStarted: 16px;
 $letterSpacing-herobtnGetStarted: 1px;
 $display-herobtnGetStarted: inline-block;
@@ -284,6 +284,29 @@ $color-herobtnGetStarted: #fff;
   margin: $margin-herobtnGetStarted;
   background: $backround-herobtnGetStarted;
   color: $color-herobtnGetStarted;
+}
+
+/* Fungsi .btn-get-started:hover */
+@function btnGetStarted($variabel, $ubahColor){
+  @return map-get($map: $variabel, $key: $ubahColor)
+}
+
+$backround-btnGetStarted: (
+  "White" : #ffffff,
+  "Black" : black,
+  "Pink" :  #d36c8d
+);
+
+$fontWeight-btnGetStarted1: (
+  "standar" : 100, 
+  "sedang" :  500,
+  "bold" : bold
+);
+
+#hero .btn-get-started:hover{
+  background-color: btnGetStarted($backround-btnGetStarted, "White");
+  color: btnGetStarted($backround-btnGetStarted, "Pink");
+  font-weight: btnGetStarted($fontWeight-btnGetStarted1, "bold");
 }
 
 /* Hero .btn-watch-video */
