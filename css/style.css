@@ -694,7 +694,7 @@ a:hover {
   opacity: 0;
   border-radius: 4px;
   transition: 0.5s;
-  background: rgba(214, 18, 172, 0.3);
+  background: #d4d5d7;
   z-index: 2;
 }
 
@@ -762,31 +762,25 @@ a:hover {
 
 /* bi-instagram */
 .bi-instagram {
-  color: #F73D93;
+  color: #fd02b6;
   font-weight: bold;
 }
 
 /* bi-facebook */
 .bi-facebook {
-  color: #F73D93;
+  color: #3d87f7;
   font-weight: bold;
 }
 
-/* bi-twitter */
-.bi-twitter {
-  color: #F73D93;
+/* bi-line */
+.bi-line {
+  color: #00b624;
   font-weight: bold;
 }
 
 /* bi-linkedin */
 .bi-linkedin {
-  color: #F73D93;
-  font-weight: bold;
-}
-
-/* bi-git */
-.bi-git {
-  color: #F73D93;
+  color: #3d87f7;
   font-weight: bold;
 }
 

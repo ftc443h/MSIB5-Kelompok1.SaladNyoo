@@ -1061,7 +1061,7 @@ $top-teamsSocial: 30px;
 $opacity-teamsSocial: 0;
 $borderRadius-teamsSocial: 4px;
 $transition-teamsSocial: 0.5s;
-$background-teamsSocial: rgba(214, 18, 172, 0.3);
+$background-teamsSocial: #d4d5d7;
 $zIndex-teamsSocial: 2;
 
 .teams .team-member .social {
@@ -1173,7 +1173,7 @@ $opacity-memberHoverSocial: 1;
   }
 
 /* bi-instagram */
-$color-biInstagram: #F73D93;
+$color-biInstagram: #fd02b6;
 $fontWeight-biInstagram: bold;
 
 .bi-instagram{
@@ -1182,7 +1182,7 @@ $fontWeight-biInstagram: bold;
 }
 
 /* bi-facebook */
-$color-biFacebook: #F73D93;
+$color-biFacebook: #3d87f7;
 $fontWeight-biFacebook: bold;
 
 .bi-facebook{
@@ -1190,31 +1190,22 @@ $fontWeight-biFacebook: bold;
   font-weight: $fontWeight-biFacebook;
 }
 
-/* bi-twitter */
-$color-biTwitter: #F73D93;
-$fontWeight-biTwitter: bold;
+/* bi-line */
+$color-biLine: #00b624;
+$fontWeight-biLine: bold;
 
-.bi-twitter{
-  color: $color-biTwitter;
-  font-weight: $fontWeight-biTwitter;
+.bi-line{
+  color: $color-biLine;
+  font-weight: $fontWeight-biLine;
 }
 
 /* bi-linkedin */
-$color-biLinkedin: #F73D93;
+$color-biLinkedin: #3d87f7;
 $fontWeight-biLinkedin: bold;
 
 .bi-linkedin{
   color: $color-biLinkedin;
   font-weight: $fontWeight-biLinkedin;
-}
-
-/* bi-git */
-$color-biGit: #F73D93;
-$fontWeight-biGit: bold;
-
-.bi-git{
-  color: $color-biGit;
-  font-weight: $fontWeight-biGit;
 }
 
 /* top */
