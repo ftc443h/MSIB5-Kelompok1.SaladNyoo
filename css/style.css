@@ -1,3 +1,7 @@
+/* Import */
+/* color-Yumm Menu*/
+/* Transition-Yumm Menu */
+/* FontFamily-Yumm Menu */
 /* Root Varible Dan Tipe Data */
 :root {
   --tag-color: #d36c8d;
@@ -523,7 +527,7 @@ a:hover {
 .menu .tab-content .tab-header h3 {
   font-size: 36px;
   font-weight: 600;
-  color: var(--color-primary);
+  font-family: "Concert One", cursive;
 }
 
 /* menu tab-content menu-item */
@@ -965,6 +969,13 @@ a:hover {
 
 .footer.credits a {
   color: #fff;
+}
+
+/* Mixin Yumm Menu */
+.Yummy:hover {
+  color: #F73D93;
+  transition: ease-in-out 5s;
+  font-family: "Concert One", cursive;
 }
 
 /* Media Nav-Link Dari 990px - 577px */

@@ -1,5 +1,10 @@
+/* Import */
+@import "bg-color";
+@import "transition";
+@import "font-family";
+
 /* Root Varible Dan Tipe Data */
-:root{
+:root {
   --tag-color: #d36c8d;
   --text-color: #7F8487;
   --button-color: #d36c8d;
@@ -130,7 +135,7 @@ $backround-containerBTSearch: var(--button-color);
 $color-containerBTSearch: var(--input-color1);
 $fontFamily-containerBTSearch: 'cursive';
 
-.container-BTSearch{
+.container-BTSearch {
   background-color: $backround-containerBTSearch;
   color: $color-containerBTSearch;
   font-family: $fontFamily-containerBTSearch, 'Concert One';
@@ -140,7 +145,7 @@ $fontFamily-containerBTSearch: 'cursive';
 $color-formControl: var(--input-color3);
 $fontFamily-formControl: cursive;
 
-.form-control::placeholder{
+.form-control::placeholder {
   color: $color-formControl;
   font-family: $fontFamily-formControl, 'Concert One';
 }
@@ -287,23 +292,23 @@ $color-herobtnGetStarted: #fff;
 }
 
 /* Fungsi .btn-get-started:hover */
-@function btnGetStarted($variabel, $ubahColor){
+@function btnGetStarted($variabel, $ubahColor) {
   @return map-get($map: $variabel, $key: $ubahColor)
 }
 
 $backround-btnGetStarted: (
   "White" : #ffffff,
   "Black" : black,
-  "Pink" :  #d36c8d
+  "Pink" : #d36c8d
 );
 
 $fontWeight-btnGetStarted1: (
-  "standar" : 100, 
-  "sedang" :  500,
+  "standar" : 100,
+  "sedang" : 500,
   "bold" : bold
 );
 
-#hero .btn-get-started:hover{
+#hero .btn-get-started:hover {
   background-color: btnGetStarted($backround-btnGetStarted, "White");
   color: btnGetStarted($backround-btnGetStarted, "Pink");
   font-weight: btnGetStarted($fontWeight-btnGetStarted1, "bold");
@@ -546,7 +551,7 @@ $marginBottom-sectionTitleP: 0;
   }
 }
 
-.oLD{
+.oLD {
   font-family: 'Concert One', cursive;
 }
 
@@ -780,12 +785,12 @@ $marginBottom-menuTabContentHeaderP: 0;
 /* menu tab-content tab-header h3 */
 $fontSize-menuTabContentHeaderH3: 36px;
 $fontWeight-menuTabContentHeaderH3: 600;
-$color-menuTabContentHeaderH3: var(--color-primary);
+$fontFamily-menuTabContentHeaderH3: 'Concert One', cursive;
 
 .menu .tab-content .tab-header h3 {
   font-size: $fontSize-menuTabContentHeaderH3;
   font-weight: $fontWeight-menuTabContentHeaderH3;
-  color: $color-menuTabContentHeaderH3;
+  font-family: $fontFamily-menuTabContentHeaderH3;
 }
 
 /* menu tab-content menu-item */
@@ -947,21 +952,21 @@ $fontFamily-doon: 'Concert One', cursive;
 $marginTop-containerTeam: 340px;
 
 #containerTeam {
-    margin-top: $marginTop-containerTeam;
-  }
+  margin-top: $marginTop-containerTeam;
+}
 
 /*img-fluid*/
 $width-imgFluid: 200px;
 
 .img-fluid {
-    width: $width-imgFluid;
-  }
+  width: $width-imgFluid;
+}
 
 /*containertem*/
 $position-containerTem: relative;
 $textAlign-containerTem: center;
 $marginTop-containerTem: -430px;
-$marginLeft-containerTem:20px;
+$marginLeft-containerTem: 20px;
 $fontSize-containerTem: 30px;
 $fontWeight-containerTem: bold;
 $textTransform-containerTem: uppercase;
@@ -969,16 +974,16 @@ $color-containerTem: #d36c8d;
 $fontFamily-containerTem: 'Concert One', cursive;
 
 .containerTem {
-    position: $position-containerTem;
-    text-align: $textAlign-containerTem;
-    margin-top: $marginTop-containerTem;
-    margin-left: $marginLeft-containerTem;
-    font-size: $fontSize-containerTem;
-    font-weight: $fontWeight-containerTem;
-    text-transform: $textTransform-containerTem;
-    color: $color-containerTem;
-    font-family: $fontFamily-containerTem;
-  }
+  position: $position-containerTem;
+  text-align: $textAlign-containerTem;
+  margin-top: $marginTop-containerTem;
+  margin-left: $marginLeft-containerTem;
+  font-size: $fontSize-containerTem;
+  font-weight: $fontWeight-containerTem;
+  text-transform: $textTransform-containerTem;
+  color: $color-containerTem;
+  font-family: $fontFamily-containerTem;
+}
 
 /*containerPTeams*/
 $position-containerPTeams: relative;
@@ -990,14 +995,14 @@ $color-containerPTeams: #8d8d9b;
 $fontFamily-containerPTeams: 'Concert One', cursive;
 
 .containerPTeams {
-    position: $position-containerPTeams;
-    margin-left: $marginLeft-containerPTeams;
-    font-size: $fontSize-containerPTeams;
-    font-weight: $fontWeight-containerPTeams;
-    text-transform: $textTransform-containerPTeams;
-    color: $color-containerPTeams;
-    font-family: $fontFamily-containerPTeams;
-  }
+  position: $position-containerPTeams;
+  margin-left: $marginLeft-containerPTeams;
+  font-size: $fontSize-containerPTeams;
+  font-weight: $fontWeight-containerPTeams;
+  text-transform: $textTransform-containerPTeams;
+  color: $color-containerPTeams;
+  font-family: $fontFamily-containerPTeams;
+}
 
 /*.teams .team-member*/
 $overFlow-teamsMember: hidden;
@@ -1010,15 +1015,15 @@ $width-teamsMember: 380px;
 $height-teamsMember: auto;
 
 .teams .team-member {
-    overflow: $overFlow-teamsMember;
-    text-align: $textAlign-teamsMember;
-    border-radius: $borderRadius-teamsMember;
-    background: $background-teamsMember;
-    box-shadow: $boxShadow-teamsMember;
-    transition: $transition-teamsMember;
-    width: $width-teamsMember;
-    height: $height-teamsMember;
-  }
+  overflow: $overFlow-teamsMember;
+  text-align: $textAlign-teamsMember;
+  border-radius: $borderRadius-teamsMember;
+  background: $background-teamsMember;
+  box-shadow: $boxShadow-teamsMember;
+  transition: $transition-teamsMember;
+  width: $width-teamsMember;
+  height: $height-teamsMember;
+}
 
 /*.teams .team-member .member-img */
 $position-teamMemberImg: relative;
@@ -1026,10 +1031,10 @@ $overFlow-teamMemberImg: hidden;
 $marginTop-teamMemberImg: 40px;
 
 .teams .team-member .member-img {
-    position: $position-teamMemberImg;
-    overflow: $overFlow-teamMemberImg;
-    margin-top: $marginTop-teamMemberImg;
-  }
+  position: $position-teamMemberImg;
+  overflow: $overFlow-teamMemberImg;
+  margin-top: $marginTop-teamMemberImg;
+}
 
 /*.teams .team-member .member-img:after */
 $position-teamMemberImgAfter: absolute;
@@ -1043,19 +1048,19 @@ $backgroundSize-teamMemberImgAfter: contain;
 $zIndex-teamMemberImgAfter: 1;
 
 .teams .team-member .member-img:after {
-    position: $position-teamMemberImgAfter;
-    content: $content-teamMemberImgAfter;
-    left: $left-teamMemberImgAfter;
-    bottom: $bottom-teamMemberImgAfter;
-    height: $height-teamMemberImgAfter;
-    width: $width-teamMemberImgAfter;
-    background:$background-teamMemberImgAfter;
-    background-size: $backgroundSize-teamMemberImgAfter;
-    z-index: $zIndex-teamMemberImgAfter;
-  }
+  position: $position-teamMemberImgAfter;
+  content: $content-teamMemberImgAfter;
+  left: $left-teamMemberImgAfter;
+  bottom: $bottom-teamMemberImgAfter;
+  height: $height-teamMemberImgAfter;
+  width: $width-teamMemberImgAfter;
+  background: $background-teamMemberImgAfter;
+  background-size: $backgroundSize-teamMemberImgAfter;
+  z-index: $zIndex-teamMemberImgAfter;
+}
 
 /*.teams .team-member .social */
-$position-teamsSocial:absolute;
+$position-teamsSocial: absolute;
 $right-teamsSocial: -100%;
 $top-teamsSocial: 30px;
 $opacity-teamsSocial: 0;
@@ -1065,15 +1070,15 @@ $background-teamsSocial: #d4d5d7;
 $zIndex-teamsSocial: 2;
 
 .teams .team-member .social {
-    position: $position-teamsSocial;
-    right: $right-teamsSocial;
-    top: $top-teamsSocial;
-    opacity: $opacity-teamsSocial;
-    border-radius: $borderRadius-teamsSocial;
-    transition: $transition-teamsSocial;
-    background: $background-teamsSocial;
-    z-index: $zIndex-teamsSocial;
-  }
+  position: $position-teamsSocial;
+  right: $right-teamsSocial;
+  top: $top-teamsSocial;
+  opacity: $opacity-teamsSocial;
+  border-radius: $borderRadius-teamsSocial;
+  transition: $transition-teamsSocial;
+  background: $background-teamsSocial;
+  z-index: $zIndex-teamsSocial;
+}
 
 /*.teams .team-member .social a */
 $transition-memberSocialA: color 0.3s;
@@ -1084,34 +1089,34 @@ $lineHeight-memberSocialA: 0;
 $textAlign-memberSocialA: center;
 
 .teams .team-member .social a {
-    transition: $transition-memberSocialA;
-    color: $color-memberSocialA;
-    margin: $margin-memberSocialA;
-    display: $display-memberSocialA;
-    line-height: $lineHeight-memberSocialA;
-    text-align: $textAlign-memberSocialA;
-  }
+  transition: $transition-memberSocialA;
+  color: $color-memberSocialA;
+  margin: $margin-memberSocialA;
+  display: $display-memberSocialA;
+  line-height: $lineHeight-memberSocialA;
+  text-align: $textAlign-memberSocialA;
+}
 
 /* .teams .team-member .social a:hover */
 $color-memberSocialAHover: rgba(55, 55, 63, 0.9);
 
 .teams .team-member .social a:hover {
-    color: $color-memberSocialAHover;
-  }
+  color: $color-memberSocialAHover;
+}
 
 /* .teams .team-member .social i */
 $fontSize-memberSocialI: 18px;
 
 .teams .team-member .social i {
-    font-size: $fontSize-memberSocialI;
-  }
+  font-size: $fontSize-memberSocialI;
+}
 
 /* .teams .team-member .member-info */
 $padding-memberInfo: 10px 15px 20px 15px;
 
 .teams .team-member .member-info {
-    padding: $padding-memberInfo;
-  }
+  padding: $padding-memberInfo;
+}
 
 /* .teams .team-member .member-info h4 */
 $fontWeight-memberInfoH4: 700;
@@ -1120,12 +1125,12 @@ $fontSize-memberInfoH4: 20px;
 $color-memberInfoH4: var(--color-secondary);
 
 .teams .team-member .member-info h4 {
-    font-weight: $fontWeight-memberInfoH4;
-    margin-bottom: $marginBottom-memberInfoH4;
-    font-size: $fontSize-memberInfoH4;
-    color: $color-memberInfoH4;
-  }
-  
+  font-weight: $fontWeight-memberInfoH4;
+  margin-bottom: $marginBottom-memberInfoH4;
+  font-size: $fontSize-memberInfoH4;
+  color: $color-memberInfoH4;
+}
+
 /* .teams .team-member .member-info span */
 $display-memberInfoSpan: block;
 $fontSize-memberInfoSpan: 14px;
@@ -1133,11 +1138,11 @@ $fontWeight-memberInfoSpan: 400;
 $color-memberInfoSpan: rgba(33, 37, 41, 0.4);
 
 .teams .team-member .member-info span {
-    display: $display-memberInfoSpan;
-    font-size: $fontSize-memberInfoSpan;
-    font-weight: $fontSize-memberInfoSpan;
-    color: $color-memberInfoSpan;
-  }
+  display: $display-memberInfoSpan;
+  font-size: $fontSize-memberInfoSpan;
+  font-weight: $fontSize-memberInfoSpan;
+  color: $color-memberInfoSpan;
+}
 
 /* .teams .team-member .member-info p */
 $fontStyle-memberInfoP: italic;
@@ -1147,36 +1152,36 @@ $lineHeight-memberInfoP: 26px;
 $color-memberInfoP: rgba(33, 37, 41, 0.7);
 
 .teams .team-member .member-info p {
-    font-style: $fontStyle-memberInfoP;
-    font-size: $fontSize-memberInfoP;
-    padding-top: $paddingTop-memberInfoP;
-    line-height: $lineHeight-memberInfoP;
-    color: $color-memberInfoP;
-  }
+  font-style: $fontStyle-memberInfoP;
+  font-size: $fontSize-memberInfoP;
+  padding-top: $paddingTop-memberInfoP;
+  line-height: $lineHeight-memberInfoP;
+  color: $color-memberInfoP;
+}
 
 /* .teams .team-member:hover */
 $transform-memberHover: scale(1.08);
 $boxShadow-memberHover: 0px 0 30px rgba(55, 55, 63, 0.15);
 
 .teams .team-member:hover {
-    transform: $transform-memberHover;
-    box-shadow: $boxShadow-memberHover;
-  }
+  transform: $transform-memberHover;
+  box-shadow: $boxShadow-memberHover;
+}
 
 /*.teams .team-member:hover .social */
 $right-memberHoverSocial: 8px;
 $opacity-memberHoverSocial: 1;
 
 .teams .team-member:hover .social {
-    right: $right-memberHoverSocial;
-    opacity: $opacity-memberHoverSocial;
-  }
+  right: $right-memberHoverSocial;
+  opacity: $opacity-memberHoverSocial;
+}
 
 /* bi-instagram */
 $color-biInstagram: #fd02b6;
 $fontWeight-biInstagram: bold;
 
-.bi-instagram{
+.bi-instagram {
   color: $color-biInstagram;
   font-weight: $fontWeight-biInstagram;
 }
@@ -1185,7 +1190,7 @@ $fontWeight-biInstagram: bold;
 $color-biFacebook: #3d87f7;
 $fontWeight-biFacebook: bold;
 
-.bi-facebook{
+.bi-facebook {
   color: $color-biFacebook;
   font-weight: $fontWeight-biFacebook;
 }
@@ -1194,7 +1199,7 @@ $fontWeight-biFacebook: bold;
 $color-biLine: #00b624;
 $fontWeight-biLine: bold;
 
-.bi-line{
+.bi-line {
   color: $color-biLine;
   font-weight: $fontWeight-biLine;
 }
@@ -1203,7 +1208,7 @@ $fontWeight-biLine: bold;
 $color-biLinkedin: #3d87f7;
 $fontWeight-biLinkedin: bold;
 
-.bi-linkedin{
+.bi-linkedin {
   color: $color-biLinkedin;
   font-weight: $fontWeight-biLinkedin;
 }
@@ -1218,7 +1223,7 @@ $marginLeft-topIcons: 20px;
 $fontSize-topIcons: 20px;
 $scroll-topIcons: smooth;
 
-#BackHome{
+#BackHome {
   position: $position-topIcons;
   display: $display-topIcons;
   margin-left: $marginLeft-topIcons;
@@ -1234,11 +1239,11 @@ $width-rani: 300px;
 $marginTop-rani: -50px;
 $marginLeft-rani: -100px;
 
-#ranii{
-    width: $width-rani;
-    margin-top: $marginTop-rani;
-    margin-left: $marginLeft-rani;
-  }
+#ranii {
+  width: $width-rani;
+  margin-top: $marginTop-rani;
+  margin-left: $marginLeft-rani;
+}
 
 //Class Contact
 $margin-top-Contact: 50px;
@@ -1248,20 +1253,20 @@ $font-weight-Contact: bold;
 $color-Contact: #d36c8d;
 $font-family-Contact: 'Concert One', cursive;
 
-.Contact{
-    margin-top: $margin-top-Contact;
-    margin-bottom: $margin-bottom-Contact;
-    font-size: $font-size-Contact;
-    font-weight: $font-weight-Contact;
-    color: $color-Contact;
-    font-family: $font-family-Contact;
+.Contact {
+  margin-top: $margin-top-Contact;
+  margin-bottom: $margin-bottom-Contact;
+  font-size: $font-size-Contact;
+  font-weight: $font-weight-Contact;
+  color: $color-Contact;
+  font-family: $font-family-Contact;
 }
 
 //Class LKM
-$color-LKM:#8d8d9b;
+$color-LKM: #8d8d9b;
 
-.LKM{
-    color: $color-LKM;
+.LKM {
+  color: $color-LKM;
 }
 
 //Class info-item
@@ -1271,12 +1276,12 @@ $height-info-item: 90px;
 $margin-info-item: 5px;
 $border-radius-info-item: 5px;
 
-.info-item{
-    background: $background-info-item;
-    padding: $padding-info-item;
-    height: $height-info-item;
-    margin: $margin-info-item;
-    border-radius: $border-radius-info-item;
+.info-item {
+  background: $background-info-item;
+  padding: $padding-info-item;
+  height: $height-info-item;
+  margin: $margin-info-item;
+  border-radius: $border-radius-info-item;
 }
 
 //Class Icon
@@ -1292,18 +1297,18 @@ $background-icon: palevioletred;
 $border-radius-icon: 50%;
 $margin-right-icon: 15px;
 
-.info-item .icon{
-    display: $display-icon;
-    align-items: $align-items-icon;
-    justify-content: $justify-content-icon;
-    width: $width-icon;
-    height: $height-icon;
-    font-size: $font-size-icon;
-    line-height: $line-height-icon;
-    color: $color-icon;
-    background: $background-icon;
-    border-radius: $border-radius-icon;
-    margin-right: $margin-right-icon;
+.info-item .icon {
+  display: $display-icon;
+  align-items: $align-items-icon;
+  justify-content: $justify-content-icon;
+  width: $width-icon;
+  height: $height-icon;
+  font-size: $font-size-icon;
+  line-height: $line-height-icon;
+  color: $color-icon;
+  background: $background-icon;
+  border-radius: $border-radius-icon;
+  margin-right: $margin-right-icon;
 }
 
 //Class php-email-form
@@ -1312,18 +1317,18 @@ $margin-top-php-email-form: 30px;
 $background-php-email-form: #fff;
 $box-shadow-php-email-form: 0 0 30px rgba(0, 0, 0, 0.08);
 
-.php-email-form{
-    width: $width-php-email-form;
-    margin-top: $margin-top-php-email-form;
-    background: $background-php-email-form;
-    box-shadow: $box-shadow-php-email-form;
+.php-email-form {
+  width: $width-php-email-form;
+  margin-top: $margin-top-php-email-form;
+  background: $background-php-email-form;
+  box-shadow: $box-shadow-php-email-form;
 }
 
 //Class form-group
 $padding-bottom-form-group: 20px;
 
-.php-email-form .form-group{
-    padding-bottom: $padding-bottom-form-group;
+.php-email-form .form-group {
+  padding-bottom: $padding-bottom-form-group;
 }
 
 //Class error-message
@@ -1334,20 +1339,20 @@ $text-align-error-message: left;
 $padding-error-message: 15px;
 $font-weight-error-message: 600;
 
-.php-email-form .error-message{
-    display: $display-error-message;
-    color: $color-error-message;
-    background: $background-error-message;
-    text-align: $text-align-error-message;
-    padding: $padding-error-message;
-    font-weight: $font-weight-error-message;
+.php-email-form .error-message {
+  display: $display-error-message;
+  color: $color-error-message;
+  background: $background-error-message;
+  text-align: $text-align-error-message;
+  padding: $padding-error-message;
+  font-weight: $font-weight-error-message;
 }
 
 //Class error-message br+br
 $margin-top-error-message: 25px;
 
-.php-email-form .error-message br+br{
-    margin-top: $margin-top-error-message;
+.php-email-form .error-message br+br {
+  margin-top: $margin-top-error-message;
 }
 
 //Class sent-message
@@ -1358,13 +1363,13 @@ $text-align-sent-message: center;
 $padding-sent-message: 15px;
 $font-weight-sent-message: 600;
 
-.php-email-form .sent-message{
-    display: $display-sent-message;
-    color: $color-sent-message;
-    background: $background-sent-message;
-    text-align: $text-align-sent-message;
-    padding: $padding-sent-message;
-    font-weight: $font-weight-sent-message;
+.php-email-form .sent-message {
+  display: $display-sent-message;
+  color: $color-sent-message;
+  background: $background-sent-message;
+  text-align: $text-align-sent-message;
+  padding: $padding-sent-message;
+  font-weight: $font-weight-sent-message;
 }
 
 //Class loading
@@ -1373,11 +1378,11 @@ $background-loading: #fff;
 $text-align-loading: center;
 $padding-loading: 15px;
 
-.php-email-form .loading{
-    display: $display-loading;
-    background: $background-loading;
-    text-align: $text-align-loading;
-    padding: $padding-loading;
+.php-email-form .loading {
+  display: $display-loading;
+  background: $background-loading;
+  text-align: $text-align-loading;
+  padding: $padding-loading;
 }
 
 //Class loading:before
@@ -1391,16 +1396,16 @@ $border-loading-before: 3px solid #059652;
 $border-top-color-loading-before: #fff;
 $animation-loading-before: animate-loading 1s linear infinite;
 
-.php-email-form .loading:before{
-    content: $content-loading-before;
-    display: $display-loading-before;
-    border-radius: $border-radius-loading-before;
-    width: $width-loading-before;
-    height: $height-loading-before;
-    margin: $margin-loading-before;
-    border: $border-loading-before;
-    border-top: $border-top-color-loading-before;
-    animation: $animation-loading-before;
+.php-email-form .loading:before {
+  content: $content-loading-before;
+  display: $display-loading-before;
+  border-radius: $border-radius-loading-before;
+  width: $width-loading-before;
+  height: $height-loading-before;
+  margin: $margin-loading-before;
+  border: $border-loading-before;
+  border-top: $border-top-color-loading-before;
+  animation: $animation-loading-before;
 }
 
 //Class input & textarea
@@ -1409,26 +1414,26 @@ $box-shadow-input-textarea: none;
 $font-size-input-textarea: 14px;
 $border-color-input-textarea: var(--color-primary);
 $height-input: 48px;
-$padding-textarea:10px 12px;
+$padding-textarea: 10px 12px;
 
 .php-email-form input,
-.php-email-form textarea{
-    border-radius: $border-radius-input-textarea;
-    box-shadow: $box-shadow-input-textarea;
-    font-size: $font-size-input-textarea;
+.php-email-form textarea {
+  border-radius: $border-radius-input-textarea;
+  box-shadow: $box-shadow-input-textarea;
+  font-size: $font-size-input-textarea;
 }
 
 .php-email-form input:focus,
-.php-email-form textarea:focus{
-    border-color: $border-color-input-textarea;
+.php-email-form textarea:focus {
+  border-color: $border-color-input-textarea;
 }
 
-.php-email-form input{
-    height: $height-input;
+.php-email-form input {
+  height: $height-input;
 }
 
-.php-email-form textarea{
-    padding: $padding-textarea;
+.php-email-form textarea {
+  padding: $padding-textarea;
 }
 
 //Class button
@@ -1440,17 +1445,17 @@ $transition-button: 0.4s;
 $border-radius-button: 50px;
 $background-button-hover: #ec2727;
 
-.php-email-form button{
-    background: $background-button;
-    border: $border-button;
-    padding: $padding-button;
-    color: $color-button;
-    transition: $transition-button;
-    border-radius: $border-radius-button;
+.php-email-form button {
+  background: $background-button;
+  border: $border-button;
+  padding: $padding-button;
+  color: $color-button;
+  transition: $transition-button;
+  border-radius: $border-radius-button;
 }
 
-.php-email-form button:hover{
-    background: $background-button-hover;
+.php-email-form button:hover {
+  background: $background-button-hover;
 }
 
 //Class footer
@@ -1459,11 +1464,11 @@ $background-color-footer: #183D3D;
 $padding-footer: 50px 0;
 $color-footer: rgba(255, 255, 255, 0.7);
 
-.footer{
-    font-size: $font-size-footer;
-    background-color: $background-color-footer;
-    padding: $padding-footer;
-    color: $color-footer;
+.footer {
+  font-size: $font-size-footer;
+  background-color: $background-color-footer;
+  padding: $padding-footer;
+  color: $color-footer;
 }
 
 //Class icon footer
@@ -1472,11 +1477,11 @@ $margin-right-icon-footer: 10px;
 $font-size-icon-footer: 20px;
 $line-height-icon-footer: 0;
 
-.footer .icon{
-    margin-top: $margin-top-icon-footer;
-    margin-right: $margin-top-icon-footer;
-    font-size: $font-size-footer;
-    line-height: $line-height-icon-footer;
+.footer .icon {
+  margin-top: $margin-top-icon-footer;
+  margin-right: $margin-top-icon-footer;
+  font-size: $font-size-footer;
+  line-height: $line-height-icon-footer;
 }
 
 //Class social-links
@@ -1493,17 +1498,17 @@ $margin-right-social-links: 10px;
 $transition-social-links: 0.3s;
 
 .footer .social-links a {
-    display: $display-social-links;
-    align-items: $align-items-social-links;
-    justify-content: $justify-content-social-links;
-    width: $width-social-links;
-    height: $height-social-links;
-    border: $border-social-links;
-    border-radius: $border-radius-social-links;
-    font-size: $font-size-social-links;
-    color: $color-social-links;
-    margin-right: $margin-right-social-links;
-    transition: $transition-social-links;
+  display: $display-social-links;
+  align-items: $align-items-social-links;
+  justify-content: $justify-content-social-links;
+  width: $width-social-links;
+  height: $height-social-links;
+  border: $border-social-links;
+  border-radius: $border-radius-social-links;
+  font-size: $font-size-social-links;
+  color: $color-social-links;
+  margin-right: $margin-right-social-links;
+  transition: $transition-social-links;
 }
 
 //Class copyright
@@ -1511,10 +1516,10 @@ $text-align-copyright: center;
 $padding-top-copyright: 30px;
 $border-top-copyright: 1px solid rgba(255, 255, 255, 0.1);
 
-.footer .copyright{
-    text-align: $text-align-copyright;
-    padding-top: $padding-top-copyright;
-    border-top: $border-top-copyright;
+.footer .copyright {
+  text-align: $text-align-copyright;
+  padding-top: $padding-top-copyright;
+  border-top: $border-top-copyright;
 }
 
 //Class credits
@@ -1523,56 +1528,68 @@ $text-align-credits: center;
 $font-size-credits: 13px;
 $color-credits: #fff;
 
-.footer.credits{
-    padding-top: $padding-top-credits;
-    text-align: $text-align-credits;
-    font-size: $font-size-credits;
+.footer.credits {
+  padding-top: $padding-top-credits;
+  text-align: $text-align-credits;
+  font-size: $font-size-credits;
 }
 
 .footer.credits a {
-    color: $color-credits;
+  color: $color-credits;
 }
 
-  /* Media Nav-Link Dari 990px - 577px */
+/* Mixin Yumm Menu */
+@mixin color-Yummy {
+  color: $color-A1;
+  transition: $transition-A1;
+  font-family: $fontFamily-A1;
+}
+
+.Yummy:hover {
+  @include color-Yummy();
+}
+
+/* Media Nav-Link Dari 990px - 577px */
 @media(max-width: 990px) and (min-width: 577px) {
   .nav-link {
-      text-align: center;
-      font-size: 15pt;
+    text-align: center;
+    font-size: 15pt;
   }
 
   .navbar-brand {
-      margin-left: -15px;
-      font-size: 25pt;
-  } 
+    margin-left: -15px;
+    font-size: 25pt;
+  }
 }
 
 /* Media Nav-Link Dari 990px - 577px */
 @media(max-width: 574px) and (min-width: 400px) {
   .nav-link {
-      text-align: center;
-      font-size: 15pt;
+    text-align: center;
+    font-size: 15pt;
   }
 
   .navbar-brand {
-      margin-left: -15px;
-      font-size: 25pt;
-  } 
+    margin-left: -15px;
+    font-size: 25pt;
+  }
 }
 
 /* Media Nav-Link Dari 990px - 577px */
 @media(max-width: 519px) and (min-width: 400px) {
   .navbar-brand {
-      font-size: 20px;
-      margin-left: 10px;
+    font-size: 20px;
+    margin-left: 10px;
   }
 }
 
 /* Media Nav-Link Dari 990px - 577px */
 @media(max-width: 574px) and (min-width: 400px) {
-  .container-BTSearch{
+  .container-BTSearch {
     margin: 4px;
   }
-  .form-control{
+
+  .form-control {
     max-height: 40px;
     margin-top: 10px;
   }
@@ -1581,12 +1598,12 @@ $color-credits: #fff;
 /* Media Nav-Link Dari 990px - 577px */
 @media(max-width: 399px) and (min-width: 280px) {
   .nav-link {
-      text-align: center;
-      font-size: 16px;
+    text-align: center;
+    font-size: 16px;
   }
 
   .navbar-brand {
-      margin-left: -15px;
-      font-size: 25pt;
-  } 
+    margin-left: -15px;
+    font-size: 25pt;
+  }
 }
