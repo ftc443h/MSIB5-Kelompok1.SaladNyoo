@@ -1007,17 +1007,26 @@ a:hover {
     margin-left: 10px;
   }
 }
-/* Media Nav-Link Dari 990px - 577px */
+@media (max-width: 496px) and (min-width: 400px) {
+  .team-member {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+/* Media container Dari 574px - 400px */
 @media (max-width: 574px) and (min-width: 400px) {
   .container-BTSearch {
     margin: 4px;
+  }
+  .team-member {
+    margin-left: 60px;
   }
   .form-control {
     max-height: 40px;
     margin-top: 10px;
   }
 }
-/* Media Nav-Link Dari 990px - 577px */
+/* Media Nav-Link Dari 399px - 280px */
 @media (max-width: 399px) and (min-width: 280px) {
   .nav-link {
     text-align: center;
