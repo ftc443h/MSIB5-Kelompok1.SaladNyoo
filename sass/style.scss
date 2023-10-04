@@ -1555,13 +1555,13 @@ $text-align-credits: center;
 $font-size-credits: 13px;
 $color-credits: #fff;
 
-.footer.credits {
+.footer .credits {
   padding-top: $padding-top-credits;
   text-align: $text-align-credits;
   font-size: $font-size-credits;
 }
 
-.footer.credits a {
+.footer .credits a {
   color: $color-credits;
 }
 
