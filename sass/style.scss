@@ -1600,17 +1600,17 @@ $color-credits: #fff;
   @include colorYumm($is-failed: false);
 }
 
-// @function font-Below($x, $z, $jumlah: 5){
-  // @while $x > $z {
-    // $x: $x - $jumlah;
-  // }
-  // @return $x;
-// }
+/* Kondisi perulangan WHILE*/
+@function font-team($nilai, $basic, $angka: 6){
+  @while $nilai > $basic {
+    $nilai : $nilai - $angka;
+  }
+  @return $nilai;
+}
 
-// .ABC-Font{
-  // font-size: font-Below(43px, 40px) !important;
-// }
-
+.nilai-font {
+  font-size: font-team(44px, 16px) !important;
+}
 
 /* Media Nav-Link Dari 990px - 577px */
 @media(max-width: 990px) and (min-width: 577px) {

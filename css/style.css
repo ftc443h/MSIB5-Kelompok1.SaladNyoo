@@ -1009,6 +1009,11 @@ a:hover {
   font-family: "Concert One", cursive;
 }
 
+/* Kondisi perulangan WHILE*/
+.nilai-font {
+  font-size: 14px !important;
+}
+
 /* Media Nav-Link Dari 990px - 577px */
 @media (max-width: 990px) and (min-width: 577px) {
   .nav-link {
