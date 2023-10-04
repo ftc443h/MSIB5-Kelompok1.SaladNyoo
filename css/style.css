@@ -989,6 +989,10 @@ a:hover {
   color: #fff;
 }
 
+#footerIC {
+  margin-left: 100px;
+}
+
 /* Mixin Yumm Menu */
 .Yummy:hover {
   color: #F73D93;
@@ -1018,29 +1022,72 @@ a:hover {
 @media (max-width: 990px) and (min-width: 577px) {
   .nav-link {
     text-align: center;
-    font-size: 15pt;
+    font-size: 15px;
   }
   .navbar-brand {
     margin-left: -15px;
-    font-size: 25pt;
+    font-size: 25px;
+  }
+  #footerIC {
+    margin-left: 60px;
+  }
+}
+/* Media navbar-brand 572px */
+@media (max-width: 572px) {
+  .navbar-brand {
+    margin-right: -30px;
+  }
+}
+/* Media Footer, Navbar, navbar-brand 575px*/
+@media (max-width: 575px) {
+  .nav-link {
+    text-align: center;
+    font-size: 15px;
+  }
+  .navbar-brand {
+    margin-left: 15px;
+    font-size: 25px;
+  }
+  .container-BTSearch {
+    margin: 4px;
+  }
+  .form-control {
+    max-height: 40px;
+    margin-top: 10px;
+  }
+  #footerIC {
+    margin-left: 30px;
+  }
+  .footer .copyright {
+    margin-top: 10px;
+  }
+  .team-member {
+    margin-left: 65px;
   }
 }
 /* Media Nav-Link Dari 990px - 577px */
 @media (max-width: 574px) and (min-width: 400px) {
   .nav-link {
     text-align: center;
-    font-size: 15pt;
+    font-size: 15px;
   }
   .navbar-brand {
     margin-left: -15px;
-    font-size: 25pt;
+    font-size: 25px;
+  }
+}
+/* Media navbar-brand 450px */
+@media (max-width: 450px) {
+  .navbar-brand {
+    font-size: 24px;
+    margin-left: -30px;
   }
 }
 /* Media Nav-Link Dari 990px - 577px */
-@media (max-width: 519px) and (min-width: 400px) {
+@media (max-width: 519px) and (min-width: 451px) {
   .navbar-brand {
-    font-size: 20px;
-    margin-left: 10px;
+    font-size: 25px;
+    margin-left: -50px;
   }
 }
 @media (max-width: 496px) and (min-width: 400px) {
@@ -1061,16 +1108,27 @@ a:hover {
     max-height: 40px;
     margin-top: 10px;
   }
+  #footerIC {
+    margin-left: -15px;
+  }
 }
 /* Media Nav-Link Dari 399px - 280px */
 @media (max-width: 399px) and (min-width: 280px) {
   .nav-link {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
   }
   .navbar-brand {
-    margin-left: -15px;
-    font-size: 25pt;
+    font-size: 22px;
+  }
+  .container-fludIMG {
+    margin-left: -10px;
+  }
+  #footerIC {
+    margin-left: -10px;
+  }
+  .team-member {
+    margin-left: 10px;
   }
 }
 
