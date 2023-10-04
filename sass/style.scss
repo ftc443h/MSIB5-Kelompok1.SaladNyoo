@@ -911,7 +911,7 @@ $textTransform-btnShpBuy: uppercase;
 $fontWeight-btnShpBuy: bold;
 $fontStyle-btnShpBuy: normal;
 
-.btn-shp-buy{
+.btn-shp-buy {
   width: $width-btnShpBuy;
   height: $height-btnShpBuy;
   border: $border-btnShpBuy;
@@ -1580,31 +1580,34 @@ $color-credits: #fff;
 }
 
 /* Kondisi Perulangan IF, ELSE */
-@mixin colorYumm($is-failed: false){
-  @if $is-failed{
+@mixin colorYumm($is-failed: false) {
+  @if $is-failed {
     color: var(--input-color2);
     font-weight: $font-weight-A6;
     font-family: $fontFamily-A1;
-  }@else {
+  }
+
+  @else {
     color: var(--input-color2);
     font-weight: $font-weight-A6;
     font-family: $fontFamily-A1;
   }
 }
 
-.text-failed{
+.text-failed {
   @include colorYumm($is-failed: true);
 }
 
-.text-sucess{
+.text-sucess {
   @include colorYumm($is-failed: false);
 }
 
 /* Kondisi perulangan WHILE*/
-@function font-team($nilai, $basic, $angka: 6){
-  @while $nilai > $basic {
+@function font-team($nilai, $basic, $angka: 6) {
+  @while $nilai >$basic {
     $nilai : $nilai - $angka;
   }
+
   @return $nilai;
 }
 
@@ -1646,8 +1649,8 @@ $color-credits: #fff;
   }
 }
 
-@media(max-width: 496px) and (min-width: 400px){
-  .team-member{
+@media(max-width: 496px) and (min-width: 400px) {
+  .team-member {
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -1659,7 +1662,7 @@ $color-credits: #fff;
     margin: 4px;
   }
 
-  .team-member{
+  .team-member {
     margin-left: 60px;
   }
 
