@@ -2,6 +2,9 @@
 @import "bg-color";
 @import "transition";
 @import "font-family";
+@import "font-weight";
+@import "cursor";
+@import "font-size";
 
 /* Root Varible Dan Tipe Data */
 :root {
@@ -1575,6 +1578,39 @@ $color-credits: #fff;
 .Yummy:hover {
   @include color-Yummy();
 }
+
+/* Kondisi Perulangan IF, ELSE */
+@mixin colorYumm($is-failed: false){
+  @if $is-failed{
+    color: var(--input-color2);
+    font-weight: $font-weight-A6;
+    font-family: $fontFamily-A1;
+  }@else {
+    color: var(--input-color2);
+    font-weight: $font-weight-A6;
+    font-family: $fontFamily-A1;
+  }
+}
+
+.text-failed{
+  @include colorYumm($is-failed: true);
+}
+
+.text-sucess{
+  @include colorYumm($is-failed: false);
+}
+
+// @function font-Below($x, $z, $jumlah: 5){
+  // @while $x > $z {
+    // $x: $x - $jumlah;
+  // }
+  // @return $x;
+// }
+
+// .ABC-Font{
+  // font-size: font-Below(43px, 40px) !important;
+// }
+
 
 /* Media Nav-Link Dari 990px - 577px */
 @media(max-width: 990px) and (min-width: 577px) {

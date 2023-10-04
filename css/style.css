@@ -1,7 +1,10 @@
 /* Import */
 /* color-Yumm Menu*/
-/* Transition-Yumm Menu */
-/* FontFamily-Yumm Menu */
+/* Transition */
+/* Font-Family */
+/* Ukuran Tebel Font */
+/* Cursor */
+/* Mengatur Besar Huruf Font-Size */
 /* Root Varible Dan Tipe Data */
 :root {
   --tag-color: #d36c8d;
@@ -990,6 +993,19 @@ a:hover {
 .Yummy:hover {
   color: #F73D93;
   transition: ease-in-out 5s;
+  font-family: "Concert One", cursive;
+}
+
+/* Kondisi Perulangan IF, ELSE */
+.text-failed {
+  color: var(--input-color2);
+  font-weight: bold;
+  font-family: "Concert One", cursive;
+}
+
+.text-sucess {
+  color: var(--input-color2);
+  font-weight: bold;
   font-family: "Concert One", cursive;
 }
 
