@@ -895,6 +895,33 @@ $cursor-price: pointer;
   cursor: $cursor-price;
 }
 
+/* btn-shp-buy */
+$border-btnShpBuy: none;
+$background-btnShpBuy: green;
+$width-btnShpBuy: 58px;
+$height-btnShpBuy: 30px;
+$color-btnShpBuy: #fff;
+$borderRadius-btnShpBuy: 4px;
+$fontFamily-btnShpBuy: 'Concert One', cursive;
+$fontSize-btnShpBuy: 14px;
+$textTransform-btnShpBuy: uppercase;
+$fontWeight-btnShpBuy: bold;
+$fontStyle-btnShpBuy: normal;
+
+.btn-shp-buy{
+  width: $width-btnShpBuy;
+  height: $height-btnShpBuy;
+  border: $border-btnShpBuy;
+  border-radius: $borderRadius-btnShpBuy;
+  color: $color-btnShpBuy;
+  font-weight: $fontWeight-btnShpBuy;
+  font-size: $fontSize-btnShpBuy;
+  background-color: $background-btnShpBuy;
+  font-family: $fontFamily-btnShpBuy;
+  text-transform: $textTransform-btnShpBuy;
+  font-style: $fontStyle-btnShpBuy;
+}
+
 /* section-header */
 $textAlign-sectionHeader: center;
 $marginTop-sectionHeader: 170px;
