@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #f9f6f2;
+}
+.card-img-top{
+    
+    border-radius: 50px;
+    padding: 20px;
+    object-fit: fill;
+    width: auto;
+    max-height: 350px;
+    min-height: 350px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    max-width: 120px;
+    background-color: #ed519a;
+    border-color: #fa7fb9;
+    
+}
+.btn-primary:hover{
+    background-color: #bc1261;
+    border: none;
+}
+h4,h3,h5{
+    color: #bc1261;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #d36c8d;
+  }
+  
+  .section-title h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+  .section-title h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #d36c8d;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
