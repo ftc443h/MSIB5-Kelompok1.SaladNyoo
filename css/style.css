@@ -611,6 +611,21 @@ a:hover {
   font-style: normal;
 }
 
+/* btn-shp-detail */
+.btn-shp-detail {
+  width: 58px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: yellow;
+  font-family: "Concert One", cursive;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
 /* section-header */
 .section-header {
   text-align: center;

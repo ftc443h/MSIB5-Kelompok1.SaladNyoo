@@ -925,6 +925,33 @@ $fontStyle-btnShpBuy: normal;
   font-style: $fontStyle-btnShpBuy;
 }
 
+/* btn-shp-detail */
+  $border-btnShpDetail: none;
+  $background-btnShpDetail: yellow;
+  $width-btnShpDetail: 58px;
+  $height-btnShpDetail: 30px;
+  $color-btnShpDetail: black;
+  $borderRadius-btnShpDetail: 4px;
+  $fontFamily-btnShpDetail: 'Concert One', cursive;
+  $fontSize-btnShpDetail: 14px;
+  $textTransform-btnShpDetail: uppercase;
+  $fontWeight-btnShpDetail: bold;
+  $fontStyle-btnShpDetail: normal;
+
+.btn-shp-detail{
+  width: $width-btnShpDetail;
+  height: $height-btnShpDetail;
+  border: $border-btnShpDetail;
+  border-radius: $borderRadius-btnShpDetail;
+  color: $color-btnShpDetail;
+  font-weight: $fontWeight-btnShpDetail;
+  font-size: $fontSize-btnShpDetail;
+  background-color: $background-btnShpDetail;
+  font-family: $fontFamily-btnShpDetail;
+  text-transform: $textTransform-btnShpDetail;
+  font-style: $fontStyle-btnShpDetail;
+}
+
 /* section-header */
 $textAlign-sectionHeader: center;
 $marginTop-sectionHeader: 170px;

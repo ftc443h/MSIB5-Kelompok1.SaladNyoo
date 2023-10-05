@@ -1,0 +1,125 @@
+/* Body HTML */
+$marginTop-Body: 20px;
+$backroundColor-Body: #f9f6f2;
+
+body {
+    margin-top: $marginTop-Body;
+    background-color: $backroundColor-Body;
+}
+
+/* Card */
+$PaddingCard: 4%;
+
+.card {
+    padding: $PaddingCard;
+}
+
+/* Card-img-top */
+$display-cardImgTop: block;
+$minHeight-cardImgTop: 300px;
+$marginBottom-cardImgTop: 10px;
+
+.card-img-top {
+    display: $display-cardImgTop;
+    min-height: $minHeight-cardImgTop;
+    margin-bottom: $marginBottom-cardImgTop;
+}
+
+/* card-title h3 */
+$textAlign-cardTitleH3: center;
+
+.card-title h3 {
+    text-align: $textAlign-cardTitleH3;
+}
+
+/* p */
+$margin-P: 2%;
+$textAlign-p: left;
+
+p {
+    margin: $margin-P;
+    text-align: $textAlign-p;
+}
+
+/* btn btn-primary */
+$btnBtnPrimary-alignContent: right;
+
+.btn btn-primary {
+    align-content: $btnBtnPrimary-alignContent;
+}
+
+/* judul-order */
+$textAlign-judulOrder: center;
+
+.judul-order {
+    text-align: $textAlign-judulOrder;
+}
+
+/* button-order */
+$margin-buttonOrder: 2%;
+$marginRight-buttonOrder: -1px;
+$justufy-buttonOrder: right;
+
+.button-order {
+    margin: $margin-buttonOrder;
+    margin-right: $marginRight-buttonOrder;
+    justify-content: $justufy-buttonOrder;
+}
+
+/* btn-cancel */
+$marginRight-btnCancel: 5px;
+$display-btnCancel: block;
+
+.btn-cancel {
+    margin-right: $marginRight-btnCancel;
+    display: $display-btnCancel;
+}
+
+/* section-title */
+$textAlign-sectionTitle: center;
+$paddingBottom: 30px;
+
+.section-title {
+    text-align: $textAlign-sectionTitle;
+    padding-bottom: $paddingBottom;
+}
+
+/* section-title h1 */
+$fontSize-sectionTitleH1: 32px;
+$fontWeight-sectionTitleH1: bold;
+$textTransform-sectionTitleH1: uppercase;
+$marginBottom-sectionTitleH1: 20px;
+$paddingBottom-sectionTitleH1: 20px;
+$position-sectionTitleH1: relative;
+$color-sectionTitleH1: #d36c8d;
+
+.section-title h1 {
+    font-size: $fontSize-sectionTitleH1;
+    font-weight: $fontWeight-sectionTitleH1;
+    text-transform: $textTransform-sectionTitleH1;
+    margin-bottom: $marginBottom-sectionTitleH1;
+    padding-bottom: $paddingBottom-sectionTitleH1;
+    position: $position-sectionTitleH1;
+    color: $color-sectionTitleH1;
+}
+
+/* section-title h1 */
+$content-sectionTitleH1: "";
+$position-sectionTitleH1: absolute;
+$display-sectionTitleH1: block;
+$width-sectionTitleH1: 40px;
+$height-sectionTitleH1: 3px;
+$backrondColor-sectionTitleH1: #d36c8d;
+$buttom-sectionTitleH1: 0;
+$left-sectionTitleH1: calc(50% - 20px);
+
+.section-title h1::after {
+    content: $content-sectionTitleH1;
+    position: $position-sectionTitleH1;
+    display: $display-sectionTitleH1;
+    width: $width-sectionTitleH1;
+    height: $height-sectionTitleH1;
+    background-color: $backrondColor-sectionTitleH1;
+    bottom: $buttom-sectionTitleH1;
+    left: $left-sectionTitleH1;
+}

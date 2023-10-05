@@ -8,6 +8,24 @@ function shooping() {
     }
 }
 
+function Buy(){
+    var BuyShp = "Apakah Anda Ingin Membeli Product Kami SaladNyoo ?";
+    if(confirm(BuyShp)){
+        location.href = 'buy.html';
+    }else{
+        location.href = 'index.html';
+    }
+}
+
+function detail(){
+    var detailShp = 'Apakah Anda Ingin Melihat Detail Product Kami SaladNyoo ?';
+    if(confirm(detailShp)){
+        location.href = 'detail.html';
+    }else{
+        location.href = 'index.html';
+    }
+}
+
 //Pragraf Otomatis Merubah Color
 var pragraff = document.getElementsByClassName("pragraff");
 setInterval(function () {
