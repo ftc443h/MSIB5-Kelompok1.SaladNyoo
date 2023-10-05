@@ -15,6 +15,7 @@
   --input-color2: #d36c8d;
   --input-color3: #7F8487;
   --h1-h2-h3-h4-h5-h6-color: #7F8487;
+  --input-greenYellow: greenyellow;
 }
 
 /* Map-Get Alert color */
@@ -38,6 +39,7 @@ $alert: (
   'success': green,
   'warning': yellow,
   'danger': red,
+  'green-Yellow': greenyellow
 );
 
 /* *, Body, HTML */
