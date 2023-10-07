@@ -1,10 +1,3 @@
-/* Import */
-/* color-Yumm Menu*/
-/* Transition */
-/* Font-Family */
-/* Ukuran Tebel Font */
-/* Cursor */
-/* Mengatur Besar Huruf Font-Size */
 /* Root Varible Dan Tipe Data */
 :root {
   --tag-color: #d36c8d;
@@ -93,6 +86,17 @@
   width: 80px;
   margin-left: 20px;
   cursor: no-drop;
+}
+
+/* visually-hidden */
+.visually-hidden {
+  font-size: 12px;
+  color: #7F8487;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: "Concert One", cursive;
+  text-align: center;
 }
 
 /* nav-link */
@@ -214,9 +218,6 @@
   #hero {
     height: 100vh;
     text-align: center;
-  }
-  #hero .animated {
-    animation: none;
   }
   #hero .hero-img {
     text-align: center;
@@ -1034,36 +1035,40 @@ a:hover {
   font-size: 14px !important;
 }
 
-/* Media Nav-Link Dari 990px - 577px */
-@media (max-width: 990px) and (min-width: 577px) {
+/* Media Nabar-brand, Nav-link Dari 991px - 200px */
+@media (max-width: 991px) and (min-width: 200px) {
   .nav-link {
     text-align: center;
-    font-size: 15px;
+    font-size: 24px;
   }
   .navbar-brand {
-    margin-left: -15px;
-    font-size: 25px;
+    font-size: 30px;
   }
+}
+/* Media Nabar-brand, Visually-hidden Dari 506px - 200px */
+@media (max-width: 506px) and (min-width: 200px) {
+  .navbar-brand {
+    display: none;
+  }
+  .nav-link {
+    text-align: center;
+    font-size: 20.5px;
+  }
+  .visually-hidden {
+    display: contents;
+    color: var(--input-color3);
+    font-size: 30px;
+    text-align: center;
+  }
+}
+/* Media Nav-Link Dari 990px - 577px */
+@media (max-width: 990px) and (min-width: 577px) {
   #footerIC {
     margin-left: 60px;
   }
 }
-/* Media navbar-brand 572px */
-@media (max-width: 572px) {
-  .navbar-brand {
-    margin-right: -30px;
-  }
-}
 /* Media Footer, Navbar, navbar-brand 575px*/
 @media (max-width: 575px) {
-  .nav-link {
-    text-align: center;
-    font-size: 15px;
-  }
-  .navbar-brand {
-    margin-left: 15px;
-    font-size: 25px;
-  }
   .container-BTSearch {
     margin: 4px;
   }
@@ -1079,31 +1084,6 @@ a:hover {
   }
   .team-member {
     margin-left: 65px;
-  }
-}
-/* Media Nav-Link Dari 990px - 577px */
-@media (max-width: 574px) and (min-width: 400px) {
-  .nav-link {
-    text-align: center;
-    font-size: 15px;
-  }
-  .navbar-brand {
-    margin-left: -15px;
-    font-size: 25px;
-  }
-}
-/* Media navbar-brand 450px */
-@media (max-width: 450px) {
-  .navbar-brand {
-    font-size: 24px;
-    margin-left: -30px;
-  }
-}
-/* Media Nav-Link Dari 990px - 577px */
-@media (max-width: 519px) and (min-width: 451px) {
-  .navbar-brand {
-    font-size: 25px;
-    margin-left: -50px;
   }
 }
 @media (max-width: 496px) and (min-width: 400px) {
@@ -1134,17 +1114,15 @@ a:hover {
     text-align: center;
     font-size: 20px;
   }
-  .navbar-brand {
-    font-size: 22px;
-  }
   .container-fludIMG {
-    margin-left: -10px;
+    margin-left: 20px;
   }
   #footerIC {
     margin-left: -10px;
   }
   .team-member {
     margin-left: 10px;
+    margin-top: 15px;
   }
 }
 

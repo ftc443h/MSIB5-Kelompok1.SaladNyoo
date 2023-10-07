@@ -1,0 +1,46 @@
+/* Mixin Yumm Menu */
+@mixin color-Yummy {
+  color: $color-A1;
+  transition: $transition-A1;
+  font-family: $fontFamily-A1;
+}
+
+.Yummy:hover {
+  @include color-Yummy();
+}
+
+/* Kondisi Perulangan IF, ELSE */
+@mixin colorYumm($is-failed: false) {
+  @if $is-failed {
+    color: var(--input-color2);
+    font-weight: $font-weight-A6;
+    font-family: $fontFamily-A1;
+  }
+
+  @else {
+    color: var(--input-color2);
+    font-weight: $font-weight-A6;
+    font-family: $fontFamily-A1;
+  }
+}
+
+.text-failed {
+  @include colorYumm($is-failed: true);
+}
+
+.text-sucess {
+  @include colorYumm($is-failed: false);
+}
+
+/* Kondisi perulangan WHILE*/
+@function font-team($nilai, $basic, $angka: 6) {
+  @while $nilai >$basic {
+    $nilai : $nilai - $angka;
+  }
+
+  @return $nilai;
+}
+
+.nilai-font {
+  font-size: font-team(44px, 16px) !important;
+}

@@ -1,0 +1,40 @@
+$color-A1: #F73D93;
+$color-A2: blue;
+$color-A3: green;
+$color-A4: pink;
+
+/* Root Varible Dan Tipe Data */
+:root {
+  --tag-color: #d36c8d;
+  --text-color: #7F8487;
+  --button-color: #d36c8d;
+  --input-color1: #fff;
+  --input-color2: #d36c8d;
+  --input-color3: #7F8487;
+  --h1-h2-h3-h4-h5-h6-color: #7F8487;
+  --input-greenYellow: greenyellow;
+}
+
+/* Map-Get Alert color */
+$alert: (
+  'dark-1': #070A52,
+  'dark-2': #d36c8d,
+  'dark-3': #16003B,
+  'dark-4': #413F42,
+  'dark-5': #7F8487,
+  'dark-6': #082032,
+  'dark-7': #2C394B,
+  'dark-8': #334756,
+  'dark-9': #FF4C29,
+  'dark-10': #0F044C,
+  'dark-11': #141E61,
+  'dark-12': #787A91,
+  'dark-13': #EEEEEE,
+  'white': #fff,
+  'abu-abu': #7F8487,
+  'pink': #F73D93,
+  'success': green,
+  'warning': yellow,
+  'danger': red,
+  'green-Yellow': greenyellow
+);
