@@ -8,20 +8,47 @@ function shooping() {
     }
 }
 
-function Buy(){
+function Buy() {
     var BuyShp = "Apakah Anda Ingin Membeli Product Kami SaladNyoo ?";
-    if(confirm(BuyShp)){
+    if (confirm(BuyShp)) {
         location.href = 'buy.html';
-    }else{
+    } else {
         location.href = 'index.html';
     }
 }
 
-function detail(){
+function gofood() {
+    var gofood = "Apakah Anda Ingin Membeli Product Kami SaladNyoo ?";
+    if (confirm(gofood)) {
+        location.href = 'https://gofood.co.id/en';
+    } else {
+        location.href = 'index.html';
+    }
+}
+
+function Order() {
+    var Order = "Apakah Anda Ingin Membeli Product Kami SaladNyoo ?";
+    if (confirm(Order)) {
+        location.href = 'https://gofood.co.id/en';
+    } else {
+        location.href = 'index.html';
+    }
+}
+
+function detail() {
     var detailShp = 'Apakah Anda Ingin Melihat Detail Product Kami SaladNyoo ?';
-    if(confirm(detailShp)){
+    if (confirm(detailShp)) {
         location.href = 'detail.html';
-    }else{
+    } else {
+        location.href = 'index.html';
+    }
+}
+
+function started() {
+    var shopp = "Apakah Anda Ingin Melihat Product Populer Salad-Nyoo ?";
+    if (confirm(shopp)) {
+        location.href = 'product.html';
+    } else {
         location.href = 'index.html';
     }
 }
@@ -40,5 +67,5 @@ setInterval(function () {
 }, 2000);
 
 const goToTo = () => {
-    return location.href='#home';
+    return location.href = '#home';
 }
